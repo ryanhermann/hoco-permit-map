@@ -40,14 +40,13 @@ Two independent halves connected by one generated data file:
 
 ```
 marketing-report-site/
+├── shell.nix               # python3 + pdfplumber + requests + pytest + nodejs
 ├── pipeline/               # Python, run manually on a dev machine
-│   ├── reports.json        # manifest: list of report PDF URLs (append new months)
-│   ├── pdfs/               # downloaded source PDFs (committed)
+│   ├── pdfs/               # source PDFs, downloaded manually (committed)
 │   ├── parse.py            # PDF → records (pdfplumber)
 │   ├── geocode.py          # Census batch geocoder + committed cache
-│   ├── build.py            # orchestrator: manifest → site/data/permits.js
-│   ├── cache/geocode.json  # normalized address → lat/lng cache (committed)
-│   └── shell.nix           # python3 + pdfplumber + requests
+│   ├── build.py            # orchestrator: pdfs/*.pdf → site/data/permits.js
+│   └── cache/geocode.json  # normalized address → lat/lng cache (committed)
 └── site/                   # the deliverable — copy anywhere to deploy
     ├── index.html
     ├── app.js
@@ -90,11 +89,10 @@ from any static host.
 
 ## Pipeline
 
-1. **Fetch** — county URLs aren't predictable (June 2026 lives under a
-   `2026-07/` upload folder), so `reports.json` is a hand-maintained manifest
-   of PDF URLs. `build.py` downloads any manifest entry missing from `pdfs/`.
-   Implementation will seed the manifest with the last ~12 months of URLs.
-   Monthly update = append one URL, rerun.
+1. **Input** — the user downloads monthly report PDFs by hand into
+   `pipeline/pdfs/` (any filename; the parser reads the report period from
+   the `From Date:` header inside the PDF). `build.py` processes every PDF
+   in that directory. Monthly update = drop in one PDF, rerun.
 2. **Parse** — `pdfplumber` word coordinates drive column assignment
    (layout-text whitespace splitting is fragile; column boundaries shift
    between pages). Anchors: permit-type line starts a record, `Census Tract`
@@ -137,7 +135,7 @@ bubbles split on zoom. Pin color distinguishes Commercial vs Residential.
 Same-address permits spiderfy on click.
 
 **Pin ↔ list linking** — pin click opens a popup (type, permit #, date,
-owner, contractor, cost, full description, link to source PDF) and
+owner, contractor, cost, full description, source report month) and
 highlights + scrolls to the sidebar card; card click pans/zooms to the pin
 and opens its popup.
 
