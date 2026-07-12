@@ -214,3 +214,26 @@ def reconcile(result):
             raise ParseError(
                 f"category {cat}: parsed {pc} records / ${round(pd, 2):,.2f}, "
                 f"subtotal says {sc} / ${round(sd, 2):,.2f}")
+
+
+def normalize(raw, period):
+    """Shape a parsed record for the site data file."""
+    month, day, year = raw["issued"].split("/")
+    lines = raw["address"]
+    street = " ".join(lines[:-1]) if len(lines) > 1 else lines[0]
+    address = f"{street}, {lines[-1]}" if len(lines) > 1 else street
+    return {
+        "id": raw["id"],
+        "type": raw["type"],
+        "category": raw["category"],
+        "owner": raw["owner"],
+        "contractor": raw["contractor"],
+        "phone": raw["phone"],
+        "description": raw["desc"],
+        "issued": f"{year}-{int(month):02d}-{int(day):02d}",
+        "address": address,
+        "tract": raw["tract"],
+        "cost": raw["cost"],
+        "units": raw["units"],
+        "source": period,
+    }

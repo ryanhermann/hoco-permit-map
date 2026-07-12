@@ -3,7 +3,8 @@ from pathlib import Path
 import pytest
 
 from parse import (
-    ParseError, ParseResult, lines_from_words, parse_pdf, reconcile)
+    ParseError, ParseResult, lines_from_words, normalize, parse_pdf,
+    reconcile)
 
 
 def w(x0, top, text):
@@ -217,10 +218,15 @@ def test_reconcile_fails_on_cost_mismatch():
 
 
 def test_reconcile_fails_on_one_cent_cost_discrepancy():
-    """Strict cents: a single-cent drift must fail, not slip under a tolerance."""
+    """Strict cents: a single-cent drift must fail, not slip under a tolerance.
+
+    Large magnitude so only a strict-equality gate catches it — a relative
+    tolerance would consider a one-cent drift on $222M negligible.
+    """
     with pytest.raises(ParseError, match="cost"):
-        reconcile(_result([_rec(100.0)],
-                          [("Commercial", 1, 100.01)], (1, 100.01)))
+        reconcile(_result([_rec(222245719.53)],
+                          [("Commercial", 1, 222245719.52)],
+                          (1, 222245719.52)))
 
 
 def test_reconcile_fails_on_subtotal_count_mismatch():
@@ -294,3 +300,34 @@ def test_all_reports_parse_reconcile_and_are_complete(pdf):
         assert r["address"], r["id"]
         assert r["tract"], r["id"]
         assert r["category"] in ("Commercial", "Residential"), r["id"]
+
+
+def test_normalize_shapes_final_record():
+    raw = {
+        "id": "B26000127", "type": "Commercial Addition Permit",
+        "category": "Commercial", "owner": "HOCK/BAVAR STAYTON JOINT",
+        "contractor": "COMPLETE CONVERSION SVS INC", "phone": "4104933522",
+        "desc": "BLDG A/ THOR LABS", "issued": "6/11/2026",
+        "address": ["10335 GUILFORD RD, BLDG A", "JESSUP, MD 20794"],
+        "tract": "606901", "cost": 10000.0, "units": 0,
+    }
+    n = normalize(raw, "2026-06")
+    assert n["issued"] == "2026-06-11"
+    assert n["address"] == "10335 GUILFORD RD, BLDG A, JESSUP, MD 20794"
+    assert n["description"] == "BLDG A/ THOR LABS"
+    assert n["source"] == "2026-06"
+    assert n["cost"] == 10000.0
+    assert "desc" not in n
+
+
+def test_normalize_joins_wrapped_street_lines_with_spaces():
+    raw = {
+        "id": "B26002234", "type": "T", "category": "Residential",
+        "owner": "O", "contractor": "", "phone": "", "desc": "D",
+        "issued": "6/30/2026",
+        "address": ["9891 BALTIMORE NATIONAL", "PIKE",
+                    "ELLICOTT CITY, MD 21042"],
+        "tract": "602304", "cost": 1.0, "units": 0,
+    }
+    n = normalize(raw, "2026-06")
+    assert n["address"] == "9891 BALTIMORE NATIONAL PIKE, ELLICOTT CITY, MD 21042"
