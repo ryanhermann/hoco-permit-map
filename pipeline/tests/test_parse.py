@@ -126,3 +126,112 @@ def test_every_record_is_complete(june):
         assert r["address"], r["id"]
         assert r["tract"], r["id"]
         assert r["category"] in ("Commercial", "Residential"), r["id"]
+
+
+class _FakePage:
+    def __init__(self, words):
+        self._words = words
+
+    def extract_words(self):
+        return self._words
+
+
+class _FakePdf:
+    def __init__(self, pages_words):
+        self.pages = [_FakePage(words) for words in pages_words]
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc_info):
+        return False
+
+
+def _from_date_line():
+    return [w(20, 40, "From"), w(50, 40, "Date:"), w(90, 40, "6/1/2026")]
+
+
+def _opener_line(top, permit_id):
+    return [w(20, top, "Commercial"), w(155, top, permit_id)]
+
+
+def _cost_closer_line(top, dollars):
+    return [
+        w(20, top, "Est"), w(50, top, "Construction"),
+        w(90, top, "Cost="), w(130, top, f"${dollars:,.2f}"),
+    ]
+
+
+def test_parse_pdf_raises_when_record_never_closed(monkeypatch):
+    words = (
+        _from_date_line()
+        + _opener_line(100, "B26000001")
+        + _opener_line(130, "B26000002")
+    )
+    monkeypatch.setattr("parse.pdfplumber.open", lambda path: _FakePdf([words]))
+    with pytest.raises(ParseError, match="never closed"):
+        parse_pdf("fake.pdf")
+
+
+def test_parse_pdf_raises_when_record_still_open_at_eof(monkeypatch):
+    words = _from_date_line() + _opener_line(100, "B26000001")
+    monkeypatch.setattr("parse.pdfplumber.open", lambda path: _FakePdf([words]))
+    with pytest.raises(ParseError, match="still open"):
+        parse_pdf("fake.pdf")
+
+
+def test_parse_pdf_raises_when_grand_totals_missing(monkeypatch):
+    # A complete, properly-closed record, but no grand-totals/From-Date lines.
+    words = _opener_line(100, "B26000001") + _cost_closer_line(140, 1000.00)
+    monkeypatch.setattr("parse.pdfplumber.open", lambda path: _FakePdf([words]))
+    with pytest.raises(ParseError, match="missing grand totals"):
+        parse_pdf("fake.pdf")
+
+
+from parse import ParseError, ParseResult, reconcile
+
+
+def _result(records, subtotals, grand):
+    return ParseResult(records, subtotals, grand, "2026-06")
+
+
+def _rec(cost):
+    return {"id": "B00000000", "cost": cost}
+
+
+def test_reconcile_passes_when_totals_match():
+    reconcile(_result([_rec(100.0), _rec(50.5)], [(2, 150.5)], (2, 150.5)))
+
+
+def test_reconcile_fails_on_count_mismatch():
+    with pytest.raises(ParseError, match="count"):
+        reconcile(_result([_rec(100.0)], [(2, 100.0)], (2, 100.0)))
+
+
+def test_reconcile_fails_on_cost_mismatch():
+    with pytest.raises(ParseError, match="cost"):
+        reconcile(_result([_rec(100.0)], [(1, 999.0)], (1, 999.0)))
+
+
+def test_reconcile_fails_on_subtotal_count_mismatch():
+    with pytest.raises(ParseError, match="subtotal"):
+        reconcile(_result([_rec(100.0)], [(2, 100.0)], (1, 100.0)))
+
+
+def test_june_reconciles(june):
+    reconcile(june)
+
+
+ALL_PDFS = sorted((Path(__file__).resolve().parent.parent / "pdfs").glob("*.pdf"))
+
+
+@pytest.mark.parametrize("pdf", ALL_PDFS, ids=lambda p: p.stem)
+def test_all_reports_parse_reconcile_and_are_complete(pdf):
+    result = parse_pdf(pdf)
+    reconcile(result)
+    for r in result.records:
+        assert r["cost"] is not None, r["id"]
+        assert r["issued"], r["id"]
+        assert r["address"], r["id"]
+        assert r["tract"], r["id"]
+        assert r["category"] in ("Commercial", "Residential"), r["id"]

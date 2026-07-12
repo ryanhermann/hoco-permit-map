@@ -163,3 +163,21 @@ def parse_pdf(path):
     if grand is None or period is None:
         raise ParseError("missing grand totals or From Date header")
     return ParseResult(records, subtotals, grand, period)
+
+
+def reconcile(result):
+    """Fail loudly if parsed records don't match the report's own totals."""
+    count, total = result.grand
+    if len(result.records) != count:
+        raise ParseError(
+            f"count mismatch: parsed {len(result.records)} records, "
+            f"report says {count}")
+    parsed_cost = round(sum(r["cost"] for r in result.records), 2)
+    if abs(parsed_cost - total) > 0.01:
+        raise ParseError(
+            f"cost mismatch: parsed ${parsed_cost:,.2f}, "
+            f"report says ${total:,.2f}")
+    sub_count = sum(c for c, _ in result.subtotals)
+    if sub_count != count:
+        raise ParseError(
+            f"subtotal counts sum to {sub_count}, grand total says {count}")
