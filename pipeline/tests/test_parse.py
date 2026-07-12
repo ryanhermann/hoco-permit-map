@@ -1,4 +1,9 @@
-from parse import lines_from_words
+from pathlib import Path
+
+import pytest
+
+from parse import (
+    ParseError, ParseResult, lines_from_words, parse_pdf, reconcile)
 
 
 def w(x0, top, text):
@@ -57,12 +62,6 @@ def test_every_line_has_all_six_columns_with_empty_string_default():
     assert line["date"] == ""
 
 
-from pathlib import Path
-
-import pytest
-
-from parse import parse_pdf
-
 PDF = Path(__file__).resolve().parent.parent / "pdfs" / "2026-06.pdf"
 
 
@@ -74,7 +73,9 @@ def june():
 def test_parses_every_record(june):
     assert len(june.records) == 320
     assert june.grand == (320, 222245719.52)
-    assert june.subtotals == [(56, 201523989.00), (264, 20721730.52)]
+    assert june.subtotals == [("Commercial", 56, 201523989.00),
+                              ("Residential", 264, 20721730.52)]
+    assert june.sections == ["Commercial", "Residential"]
     assert june.period == "2026-06"
 
 
@@ -188,34 +189,87 @@ def test_parse_pdf_raises_when_grand_totals_missing(monkeypatch):
         parse_pdf("fake.pdf")
 
 
-from parse import ParseError, ParseResult, reconcile
+def _result(records, subtotals, grand, sections=None):
+    if sections is None:
+        sections = [cat for cat, _, _ in subtotals]
+    return ParseResult(records, subtotals, grand, "2026-06", sections)
 
 
-def _result(records, subtotals, grand):
-    return ParseResult(records, subtotals, grand, "2026-06")
-
-
-def _rec(cost):
-    return {"id": "B00000000", "cost": cost}
+def _rec(cost, category="Commercial"):
+    return {"id": "B00000000", "cost": cost, "category": category}
 
 
 def test_reconcile_passes_when_totals_match():
-    reconcile(_result([_rec(100.0), _rec(50.5)], [(2, 150.5)], (2, 150.5)))
+    reconcile(_result([_rec(100.0), _rec(50.5)],
+                      [("Commercial", 2, 150.5)], (2, 150.5)))
 
 
 def test_reconcile_fails_on_count_mismatch():
     with pytest.raises(ParseError, match="count"):
-        reconcile(_result([_rec(100.0)], [(2, 100.0)], (2, 100.0)))
+        reconcile(_result([_rec(100.0)],
+                          [("Commercial", 2, 100.0)], (2, 100.0)))
 
 
 def test_reconcile_fails_on_cost_mismatch():
     with pytest.raises(ParseError, match="cost"):
-        reconcile(_result([_rec(100.0)], [(1, 999.0)], (1, 999.0)))
+        reconcile(_result([_rec(100.0)],
+                          [("Commercial", 1, 999.0)], (1, 999.0)))
+
+
+def test_reconcile_fails_on_one_cent_cost_discrepancy():
+    """Strict cents: a single-cent drift must fail, not slip under a tolerance."""
+    with pytest.raises(ParseError, match="cost"):
+        reconcile(_result([_rec(100.0)],
+                          [("Commercial", 1, 100.01)], (1, 100.01)))
 
 
 def test_reconcile_fails_on_subtotal_count_mismatch():
     with pytest.raises(ParseError, match="subtotal"):
-        reconcile(_result([_rec(100.0)], [(2, 100.0)], (1, 100.0)))
+        reconcile(_result([_rec(100.0)],
+                          [("Commercial", 2, 100.0)], (1, 100.0)))
+
+
+def test_reconcile_fails_when_subtotal_dollars_dont_sum_to_grand():
+    with pytest.raises(ParseError, match="subtotal dollars"):
+        reconcile(_result(
+            [_rec(100.0), _rec(50.0, "Residential")],
+            [("Commercial", 1, 100.0), ("Residential", 1, 49.0)],
+            (2, 150.0)))
+
+
+def test_reconcile_fails_when_subtotal_lines_outnumber_section_headers():
+    """A header line that stops matching would leave records with a stale
+    category; catching subtotal-lines > headers-seen makes that loud."""
+    with pytest.raises(ParseError, match="section header"):
+        reconcile(_result(
+            [_rec(100.0), _rec(50.0, "Residential")],
+            [("Commercial", 1, 100.0), ("Residential", 1, 50.0)],
+            (2, 150.0),
+            sections=["Commercial"]))
+
+
+def test_reconcile_fails_on_per_category_count_mismatch():
+    with pytest.raises(ParseError, match="Commercial"):
+        reconcile(_result(
+            [_rec(100.0), _rec(50.0, "Residential")],
+            [("Commercial", 2, 100.0), ("Residential", 0, 50.0)],
+            (2, 150.0)))
+
+
+def test_reconcile_fails_on_per_category_cost_mismatch():
+    with pytest.raises(ParseError, match="Commercial"):
+        reconcile(_result(
+            [_rec(100.0), _rec(50.0, "Residential")],
+            [("Commercial", 1, 50.0), ("Residential", 1, 100.0)],
+            (2, 150.0)))
+
+
+def test_reconcile_is_agnostic_to_section_order():
+    """Mar/Apr/May reports list Residential first — must still reconcile."""
+    reconcile(_result(
+        [_rec(100.0), _rec(50.0, "Residential")],
+        [("Residential", 1, 50.0), ("Commercial", 1, 100.0)],
+        (2, 150.0)))
 
 
 def test_june_reconciles(june):
@@ -223,6 +277,11 @@ def test_june_reconciles(june):
 
 
 ALL_PDFS = sorted((Path(__file__).resolve().parent.parent / "pdfs").glob("*.pdf"))
+
+
+def test_pdf_fixtures_present():
+    """A broken glob must fail loudly, not silently skip the all-months test."""
+    assert ALL_PDFS
 
 
 @pytest.mark.parametrize("pdf", ALL_PDFS, ids=lambda p: p.stem)

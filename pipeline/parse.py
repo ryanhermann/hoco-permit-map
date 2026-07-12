@@ -49,9 +49,10 @@ class ParseError(Exception):
 @dataclass
 class ParseResult:
     records: list
-    subtotals: list   # [(count, dollars), ...] per section
+    subtotals: list   # [(category, count, dollars), ...] per section
     grand: tuple      # (count, dollars)
     period: str       # "YYYY-MM"
+    sections: list    # section header lines seen ("Commercial"/...), in order
 
 
 def _money(s):
@@ -69,7 +70,7 @@ def _is_header_or_footer(text, line):
 
 
 def parse_pdf(path):
-    records, subtotals = [], []
+    records, subtotals, sections = [], [], []
     grand = period = None
     cur = None
     category = None
@@ -94,10 +95,12 @@ def parse_pdf(path):
                     continue
                 m = SUBTOTAL_RE.search(text)
                 if m:
-                    subtotals.append((int(m.group(1)), _money(m.group(2))))
+                    subtotals.append(
+                        (category, int(m.group(1)), _money(m.group(2))))
                     continue
                 if text in ("Commercial", "Residential"):
                     category = text
+                    sections.append(text)
                     continue
                 if PERMIT_RE.match(line["permit"]):
                     if cur is not None:
@@ -162,22 +165,52 @@ def parse_pdf(path):
         raise ParseError(f"record {cur['id']} still open at end of document")
     if grand is None or period is None:
         raise ParseError("missing grand totals or From Date header")
-    return ParseResult(records, subtotals, grand, period)
+    return ParseResult(records, subtotals, grand, period, sections)
 
 
 def reconcile(result):
-    """Fail loudly if parsed records don't match the report's own totals."""
+    """Fail loudly if parsed records don't match the report's own totals.
+
+    Every dollar comparison is strict equality on rounded cents — no
+    tolerance. A mismatch means the parser missed something real.
+    """
     count, total = result.grand
+    total = round(total, 2)
     if len(result.records) != count:
         raise ParseError(
             f"count mismatch: parsed {len(result.records)} records, "
             f"report says {count}")
     parsed_cost = round(sum(r["cost"] for r in result.records), 2)
-    if abs(parsed_cost - total) > 0.01:
+    if parsed_cost != total:
         raise ParseError(
             f"cost mismatch: parsed ${parsed_cost:,.2f}, "
             f"report says ${total:,.2f}")
-    sub_count = sum(c for c, _ in result.subtotals)
+    sub_count = sum(c for _, c, _ in result.subtotals)
     if sub_count != count:
         raise ParseError(
             f"subtotal counts sum to {sub_count}, grand total says {count}")
+    sub_dollars = round(sum(d for _, _, d in result.subtotals), 2)
+    if sub_dollars != total:
+        raise ParseError(
+            f"subtotal dollars sum to ${sub_dollars:,.2f}, "
+            f"grand total says ${total:,.2f}")
+    if len(result.subtotals) != len(result.sections):
+        raise ParseError(
+            f"{len(result.subtotals)} subtotal lines but "
+            f"{len(result.sections)} section headers seen — a header line "
+            f"may have stopped matching, leaving records mis-categorized")
+    by_cat = {}
+    for r in result.records:
+        c, d = by_cat.get(r["category"], (0, 0.0))
+        by_cat[r["category"]] = (c + 1, d + r["cost"])
+    sub_by_cat = {}
+    for cat, c, d in result.subtotals:
+        pc, pd = sub_by_cat.get(cat, (0, 0.0))
+        sub_by_cat[cat] = (pc + c, pd + d)
+    for cat in sorted(set(by_cat) | set(sub_by_cat), key=str):
+        pc, pd = by_cat.get(cat, (0, 0.0))
+        sc, sd = sub_by_cat.get(cat, (0, 0.0))
+        if pc != sc or round(pd, 2) != round(sd, 2):
+            raise ParseError(
+                f"category {cat}: parsed {pc} records / ${round(pd, 2):,.2f}, "
+                f"subtotal says {sc} / ${round(sd, 2):,.2f}")

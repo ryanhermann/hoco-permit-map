@@ -481,6 +481,33 @@ git add pipeline/parse.py pipeline/tests/test_parse.py
 git commit -m "feat: reconciliation gate against report's printed totals"
 ```
 
+### Amendment (2026-07-12, after Task 4 review)
+
+Gate strengthening authorized by the plan owner following code review
+(the "never weaken the reconciliation gate" note below is upheld — these
+changes only tighten it):
+
+- **Strict cent equality.** The `abs(parsed_cost - total) > 0.01`
+  tolerance was replaced with strict equality on rounded cents
+  (`parsed_cost != round(total, 2)`). A record off by exactly $0.01 now
+  fails reconciliation; previously it slipped through.
+- **Category-tagged subtotals.** `ParseResult.subtotals` entries are now
+  `(category, count, dollars)` triples (tagged with the section they
+  close), and `ParseResult` gained a `sections` field listing each
+  "Commercial"/"Residential" section header line seen, in order.
+  `reconcile` additionally checks: subtotal dollars sum to the grand
+  total (strict, rounded cents); the number of subtotal lines equals the
+  number of section headers seen (catches a future PDF whose header line
+  gains extra text and stops matching — records would silently inherit
+  the stale category); and per-category record counts and summed costs
+  match that category's subtotal(s) (strict, rounded cents,
+  order-agnostic — Mar/Apr/May list Residential first).
+- **Downstream note.** Task 8's `build.py` consumes `ParseResult`; it
+  must use the new `(category, count, dollars)` subtotal shape (and may
+  rely on `sections`).
+
+All six months (Jan–Jun 2026) reconcile under the strict checks.
+
 ---
 
 ### Task 5: Parser — record normalization
