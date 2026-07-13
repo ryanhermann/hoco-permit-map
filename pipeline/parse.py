@@ -1,6 +1,7 @@
 """Parse Howard County 'Marketing Analysis Report - Building' PDFs."""
 import re
 from dataclasses import dataclass
+from datetime import datetime
 
 import pdfplumber
 
@@ -218,8 +219,12 @@ def reconcile(result):
 
 def normalize(raw, period):
     """Shape a parsed record for the site data file."""
-    month, day, year = raw["issued"].split("/")
-    lines = raw["address"]
+    if not raw["address"]:
+        raise ParseError(f"record {raw['id']} has no address lines")
+    issued = datetime.strptime(raw["issued"], "%m/%d/%Y").date().isoformat()
+    lines = list(raw["address"])
+    if len(lines) > 1 and re.fullmatch(r"\d{5}(-\d{4})?", lines[-1]):
+        lines[-2:] = [f"{lines[-2]} {lines[-1]}"]
     street = " ".join(lines[:-1]) if len(lines) > 1 else lines[0]
     address = f"{street}, {lines[-1]}" if len(lines) > 1 else street
     return {
@@ -230,7 +235,7 @@ def normalize(raw, period):
         "contractor": raw["contractor"],
         "phone": raw["phone"],
         "description": raw["desc"],
-        "issued": f"{year}-{int(month):02d}-{int(day):02d}",
+        "issued": issued,
         "address": address,
         "tract": raw["tract"],
         "cost": raw["cost"],

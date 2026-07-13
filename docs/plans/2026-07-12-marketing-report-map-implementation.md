@@ -596,6 +596,35 @@ git add pipeline/parse.py pipeline/tests/test_parse.py
 git commit -m "feat: record normalization (ISO dates, joined addresses)"
 ```
 
+### Amendment (2026-07-13, after Task 5 review)
+
+Fix round authorized by the plan owner following a code-quality review:
+
+- **Bare-ZIP wrap fold.** Six ANNAPOLIS JUNCTION records have the ZIP
+  code wrapped onto its own PDF line (e.g. `["11030 GUILFORD RD",
+  "ANNAPOLIS JUNCTION, MD", "20701"]`). The old join treated the ZIP as
+  a full extra address line and inserted a comma before it
+  (`"...JUNCTION, MD, 20701"`), which would have broken Task 6's
+  `split_address` regex (`...MD\s*(?P<zip>\d{5})...` expects the ZIP
+  glued to "MD" by whitespace, not preceded by a comma). `normalize` now
+  folds a trailing bare-ZIP line into the previous line with a space
+  before joining, so the same record produces `"11030 GUILFORD RD,
+  ANNAPOLIS JUNCTION, MD 20701"`.
+- **Loud date validation.** The manual `split("/")` + f-string date
+  handling silently produced garbage ISO strings for malformed input
+  (e.g. `"13/45/2026"` would become `"2026-13-45"`, an invalid date that
+  wouldn't fail until something downstream tried to parse it, far from
+  the actual bad data). `normalize` now uses
+  `datetime.strptime(raw["issued"], "%m/%d/%Y").date().isoformat()`,
+  which raises `ValueError` immediately at the point of the bad record.
+- **Empty-address guard.** A record with no address lines used to raise
+  a bare `IndexError` from `lines[0]`. `normalize` now checks for this
+  up front and raises `ParseError(f"record {raw['id']} has no address
+  lines")`, naming the offending record.
+
+All six months (Jan–Jun 2026) still parse and normalize cleanly under
+these stricter checks.
+
 ---
 
 ### Task 6: Geocoder — address splitting

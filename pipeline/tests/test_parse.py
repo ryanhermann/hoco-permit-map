@@ -331,3 +331,39 @@ def test_normalize_joins_wrapped_street_lines_with_spaces():
     }
     n = normalize(raw, "2026-06")
     assert n["address"] == "9891 BALTIMORE NATIONAL PIKE, ELLICOTT CITY, MD 21042"
+
+
+def test_normalize_folds_bare_zip_wrap_line():
+    raw = {
+        "id": "B26001190", "type": "T", "category": "Commercial",
+        "owner": "O", "contractor": "", "phone": "", "desc": "D",
+        "issued": "6/15/2026",
+        "address": ["11030 GUILFORD RD", "ANNAPOLIS JUNCTION, MD", "20701"],
+        "tract": "605902", "cost": 1.0, "units": 0,
+    }
+    n = normalize(raw, "2026-06")
+    assert n["address"] == "11030 GUILFORD RD, ANNAPOLIS JUNCTION, MD 20701"
+
+
+def test_normalize_raises_on_malformed_date():
+    raw = {
+        "id": "B26009999", "type": "T", "category": "Residential",
+        "owner": "O", "contractor": "", "phone": "", "desc": "D",
+        "issued": "13/45/2026",
+        "address": ["1 MAIN ST", "COLUMBIA, MD 21044"],
+        "tract": "600000", "cost": 1.0, "units": 0,
+    }
+    with pytest.raises(ValueError):
+        normalize(raw, "2026-06")
+
+
+def test_normalize_raises_on_empty_address():
+    raw = {
+        "id": "B26008888", "type": "T", "category": "Residential",
+        "owner": "O", "contractor": "", "phone": "", "desc": "D",
+        "issued": "6/1/2026",
+        "address": [],
+        "tract": "600000", "cost": 1.0, "units": 0,
+    }
+    with pytest.raises(ParseError, match="B26008888"):
+        normalize(raw, "2026-06")
