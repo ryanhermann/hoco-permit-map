@@ -1037,6 +1037,26 @@ git add pipeline/build.py pipeline/tests/test_build.py
 git commit -m "feat: build orchestrator emitting site/data/permits.js"
 ```
 
+### Amendment (2026-07-13, after Task 8 review)
+
+Two strengthenings authorized by the plan owner following code review:
+
+- **Fail loud on missing geocode entry.** `assemble()` used
+  `geo.get(r["address"], {"quality": "failed"})`, which would silently
+  mark a permit "failed" (quietly vanishing from the map) if its address
+  key were absent from the cache. Since `geocode_all` covers every
+  address `main()` passes, a missing key can only be a bug — key drift
+  between `normalize` output and cache keys. Replaced with
+  `geo[r["address"]]` so the mismatch surfaces as a `KeyError` naming
+  the offending address.
+- **Deterministic UTF-8 output.** Corpus descriptions contain real
+  non-ASCII (curly quotes, ×, –, ±, ®) and `emit()` serializes with
+  `ensure_ascii=False`, so the JS payload carries raw UTF-8. Without an
+  explicit encoding, `path.write_text(...)` is locale-dependent and
+  could fail or mis-encode on a non-UTF-8 locale. `emit()` now passes
+  `encoding="utf-8"` explicitly, making the artifact byte-for-byte
+  deterministic across environments.
+
 ---
 
 ### Task 9: Run the real pipeline

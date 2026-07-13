@@ -17,7 +17,7 @@ def assemble(records, geo):
     out = []
     for r in sorted(records, key=lambda r: (r["issued"], r["id"])):
         r = dict(r)
-        entry = geo.get(r["address"], {"quality": "failed"})
+        entry = geo[r["address"]]
         quality = entry["quality"]
         if quality != "failed":
             r["lat"] = entry["lat"]
@@ -32,7 +32,7 @@ def assemble(records, geo):
 def emit(records, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     body = json.dumps(records, separators=(",", ":"), ensure_ascii=False)
-    path.write_text(f"window.PERMITS={body};\n")
+    path.write_text(f"window.PERMITS={body};\n", encoding="utf-8")
 
 
 def main():

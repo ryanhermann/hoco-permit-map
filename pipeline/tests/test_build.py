@@ -1,5 +1,7 @@
 import json
 
+import pytest
+
 from build import assemble, emit
 
 
@@ -33,6 +35,12 @@ def test_tract_disagreement_downgrades_quality():
     assert records[0]["geoq"] == "approx"
 
 
+def test_assemble_raises_on_missing_geocode_entry():
+    with pytest.raises(KeyError, match="MISSING"):
+        assemble([_permit("B1", "2026-06-02", "MISSING ST, X, MD 11111")],
+                 GEO)
+
+
 def test_emit_writes_loadable_js(tmp_path):
     out = tmp_path / "permits.js"
     emit([{"id": "B1"}], out)
@@ -40,3 +48,13 @@ def test_emit_writes_loadable_js(tmp_path):
     assert text.startswith("window.PERMITS=")
     assert json.loads(text.removeprefix("window.PERMITS=").rstrip(";\n")) == \
         [{"id": "B1"}]
+
+
+def test_emit_round_trips_non_ascii_utf8(tmp_path):
+    out = tmp_path / "permits.js"
+    records = [{"id": "B1", "description": "“shed” 10×12"}]
+    emit(records, out)
+    text = out.read_text(encoding="utf-8")
+    assert "“shed” 10×12" in text
+    assert json.loads(text.removeprefix("window.PERMITS=").rstrip(";\n")) == \
+        records
