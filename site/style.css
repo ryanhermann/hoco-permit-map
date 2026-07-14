@@ -48,6 +48,7 @@ body { font: 14px/1.45 system-ui, sans-serif; color: #1a202c; }
 #sidebar-toggle { display: none; }
 #error { position: absolute; inset: 0; display: flex; align-items: center;
   justify-content: center; background: #fff; z-index: 2000; }
+#error[hidden] { display: none; }
 
 .popup { max-width: 280px; }
 .popup h3 { margin: 0 0 4px; font-size: 14px; }
@@ -60,7 +61,8 @@ body { font: 14px/1.45 system-ui, sans-serif; color: #1a202c; }
   #app { flex-direction: column; }
   #sidebar { position: fixed; bottom: 0; left: 0; right: 0; top: 40%;
     width: 100%; min-width: 0; transform: translateY(calc(100% - 0px));
-    transition: transform .2s; border-top: 1px solid #e2e8f0; }
+    transition: transform .2s; border-top: 1px solid #e2e8f0;
+    z-index: 1001; /* above Leaflet's bottom controls (1000) */ }
   #sidebar.open { transform: none; }
   #sidebar-toggle { display: block; position: fixed; bottom: 12px;
     left: 50%; transform: translateX(-50%); z-index: 1100;

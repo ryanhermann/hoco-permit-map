@@ -1682,6 +1682,35 @@ git commit -m "fix: smoke-test findings"   # only if changes were needed
 
 Kill the server when done.
 
+### Amendment (2026-07-14, after Task 14 smoke test)
+
+The smoke test (run via CDP against headless Chromium; this host's
+Chromium cannot load subresources or reach the network, so the suite ran
+against a fully-inlined single-file copy of the site over `file://`,
+with tile reachability verified separately via curl) caught one real
+ship-blocker and confirmed one predicted cosmetic issue. Both fixed in
+`site/style.css`:
+
+- **`#error` overlay painted at all times (Critical).** The rule
+  `#error { display: flex; ... }` overrides the HTML `hidden`
+  attribute's UA-stylesheet `display: none` (author styles win), so the
+  full-viewport white error overlay covered the entire app even with
+  data loaded — every DOM-level check passed while the site was
+  visually just an error message. Fix: `#error[hidden] { display:
+  none; }`. Regression guard: the smoke driver now checks
+  `getComputedStyle(#error).display === "none"` and that
+  `elementFromPoint` at the map's center resolves inside `#map`.
+- **Leaflet attribution painted over the open mobile sheet (Minor,
+  predicted by the Task 12/13 review).** `#sidebar` and Leaflet's
+  bottom controls tied at z-index 1000, and DOM order let the map win.
+  Fix: mobile `#sidebar` bumped to `z-index: 1001`; hit-test confirmed
+  the sheet now paints above the attribution.
+
+All 24 smoke checks pass: load (1,619 permits, 17 clusters, 400-card
+cap), search/hash/category filtering, hash restore on reload, card→pin
+focus + popup, trusted-input pin click → popup + card highlight,
+cluster click → zoom/split, mobile sheet + toggle, no console errors.
+
 ---
 
 ### Task 15: README and wrap-up
