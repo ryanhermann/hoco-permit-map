@@ -50,3 +50,9 @@ test("empty state serializes to empty hash", () => {
   assert.strictEqual(Filters.toHash(EMPTY), "");
   assert.deepStrictEqual(Filters.fromHash(""), EMPTY);
 });
+
+test("fromHash tolerates garbage without throwing", () => {
+  assert.deepStrictEqual(Filters.fromHash("#%GG"), EMPTY);
+  assert.deepStrictEqual(Filters.fromHash("#q=%GG"), { ...EMPTY, q: "%GG" });
+  assert.deepStrictEqual(Filters.fromHash("#types="), EMPTY);
+});
