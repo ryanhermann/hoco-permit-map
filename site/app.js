@@ -15,6 +15,9 @@
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    // OSM's tile policy rejects requests without a Referer (osm.wiki/Blocked);
+    // send the page origin even if the host sets a stricter Referrer-Policy.
+    referrerPolicy: "strict-origin-when-cross-origin",
   }).addTo(map);
   const cluster = L.markerClusterGroup({ chunkedLoading: true });
   map.addLayer(cluster);
