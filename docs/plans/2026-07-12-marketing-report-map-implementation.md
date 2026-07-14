@@ -1086,6 +1086,27 @@ git add site/data/permits.js pipeline/cache/geocode.json
 git commit -m "data: build permits dataset from available reports"
 ```
 
+### Amendment (2026-07-13, after Task 9 run)
+
+Fix authorized by the plan owner after the real pipeline run exposed a
+data-level false positive in `assemble()`'s tract-disagreement check:
+
+- **Compare tract base, not vintage-specific suffix.** All six PDFs
+  reconciled (1,619 permits; Census matched 1,210 of 1,495 unique
+  addresses Exact), yet the summary showed only 498 exact / 1042 approx
+  / 79 failed — 805 exact-geocode records were downgraded. The county
+  PDFs carry older-vintage tract codes, while the Census geocoder's
+  Current vintage returns post-2020 codes where many tracts have split
+  or been renumbered, differing only in the suffix (e.g. PDF 606703 vs
+  Census 606706; 602200 vs 602201). Corpus-wide: 542 records agree
+  exactly, 822 agree on the 4-digit base but differ in suffix (vintage
+  noise — the geocode is fine), and 80 disagree at the base (genuine
+  disagreement, e.g. 605601 vs 604004 — correct to downgrade).
+  `assemble()` now compares `entry["tract"][:4] != r["tract"][:4]`,
+  keeping the wrong-location signal (the 80 base disagreements stay
+  downgraded) while recovering the ~800 falsely-downgraded exact
+  geocodes.
+
 ---
 
 ### Task 10: Vendor Leaflet and markercluster

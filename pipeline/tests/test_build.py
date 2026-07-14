@@ -35,6 +35,16 @@ def test_tract_disagreement_downgrades_quality():
     assert records[0]["geoq"] == "approx"
 
 
+def test_tract_suffix_difference_keeps_exact():
+    # County PDFs carry older-vintage tract codes; Census Current codes
+    # often differ only in the suffix (tract splits). Same 4-digit base
+    # (6069) must not downgrade the geocode quality.
+    records = assemble(
+        [_permit("B1", "2026-06-02", "A ST, X, MD 11111", tract="606906")],
+        GEO)
+    assert records[0]["geoq"] == "exact"
+
+
 def test_assemble_raises_on_missing_geocode_entry():
     with pytest.raises(KeyError, match="MISSING"):
         assemble([_permit("B1", "2026-06-02", "MISSING ST, X, MD 11111")],

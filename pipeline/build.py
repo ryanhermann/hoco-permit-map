@@ -22,7 +22,7 @@ def assemble(records, geo):
         if quality != "failed":
             r["lat"] = entry["lat"]
             r["lng"] = entry["lng"]
-            if entry.get("tract") and entry["tract"] != r["tract"]:
+            if entry.get("tract") and entry["tract"][:4] != r["tract"][:4]:
                 quality = "approx"
         r["geoq"] = quality
         out.append(r)
