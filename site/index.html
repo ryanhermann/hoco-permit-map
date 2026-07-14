@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Howard County Building Permits Map</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.Default.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <header>
+      <h1>Howard County Building Permits</h1>
+      <p class="subtitle">From the county's monthly Marketing Analysis Reports</p>
+    </header>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search owner, contractor, address, description…" autocomplete="off">
+      <div class="dates">
+        <label>From <input id="from" type="month"></label>
+        <label>To <input id="to" type="month"></label>
+      </div>
+      <div class="cats" id="cats">
+        <button data-cat="All" class="active">All</button>
+        <button data-cat="Commercial">Commercial</button>
+        <button data-cat="Residential">Residential</button>
+      </div>
+      <details id="types-details">
+        <summary>Permit types</summary>
+        <div id="types"></div>
+      </details>
+    </div>
+    <div id="summary"></div>
+    <div id="results"></div>
+  </aside>
+  <button id="sidebar-toggle" aria-label="Toggle list">☰ List</button>
+  <div id="map"></div>
+  <div id="error" hidden>
+    <p>Permit data failed to load. Run <code>python3 pipeline/build.py</code>
+    to generate <code>site/data/permits.js</code>.</p>
+  </div>
+</div>
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
+<script src="data/permits.js"></script>
+<script src="filter.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
