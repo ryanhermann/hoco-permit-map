@@ -21,6 +21,15 @@
   }).addTo(map);
   const cluster = L.markerClusterGroup({ chunkedLoading: true });
   map.addLayer(cluster);
+  // Past neighborhood zoom the coverage polygon reads as parcel bounds, but
+  // pins are road-geocoded, so suppress it. Registered after addLayer so it
+  // runs after the plugin's own hover handler, same tick — nothing paints.
+  const COVERAGE_MAX_ZOOM = 11;
+  const COVERAGE_MIN_PINS = 7;
+  cluster.on("clustermouseover", (e) => {
+    if (map.getZoom() > COVERAGE_MAX_ZOOM || e.layer.getChildCount() < COVERAGE_MIN_PINS)
+      cluster._hideCoverage();
+  });
 
   const money = (n) => "$" + Math.round(n).toLocaleString("en-US");
 
