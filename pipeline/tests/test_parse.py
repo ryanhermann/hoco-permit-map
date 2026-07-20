@@ -317,7 +317,11 @@ def test_normalize_shapes_final_record():
     assert n["description"] == "BLDG A/ THOR LABS"
     assert n["source"] == "2026-06"
     assert n["cost"] == 10000.0
+    assert n["contractor"] == "COMPLETE CONVERSION SVS INC"
     assert "desc" not in n
+    # Personal fields are stripped before publication.
+    assert "owner" not in n
+    assert "phone" not in n
 
 
 def test_normalize_joins_wrapped_street_lines_with_spaces():

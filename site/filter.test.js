@@ -5,7 +5,7 @@ const Filters = require("./filter.js");
 
 const permit = (over) => Object.assign({
   id: "B26000127", type: "Commercial Addition Permit",
-  category: "Commercial", owner: "HOCK/BAVAR", contractor: "COMPLETE SVS",
+  category: "Commercial", contractor: "COMPLETE SVS",
   description: "EXTERIOR STAIRCASE", address: "10335 GUILFORD RD, JESSUP, MD 20794",
   issued: "2026-06-11",
 }, over);

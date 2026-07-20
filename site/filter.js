@@ -5,7 +5,7 @@
 (function (global) {
   const Filters = {
     searchText(p) {
-      return [p.id, p.type, p.owner, p.contractor, p.description, p.address]
+      return [p.id, p.type, p.contractor, p.description, p.address]
         .join(" ").toLowerCase();
     },
 

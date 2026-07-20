@@ -227,13 +227,14 @@ def normalize(raw, period):
         lines[-2:] = [f"{lines[-2]} {lines[-1]}"]
     street = " ".join(lines[:-1]) if len(lines) > 1 else lines[0]
     address = f"{street}, {lines[-1]}" if len(lines) > 1 else street
+    # owner (a private individual on most residential permits) and the
+    # contractor phone are intentionally dropped: this dataset is published
+    # as a public site, so it carries no personal names or phone numbers.
     return {
         "id": raw["id"],
         "type": raw["type"],
         "category": raw["category"],
-        "owner": raw["owner"],
         "contractor": raw["contractor"],
-        "phone": raw["phone"],
         "description": raw["desc"],
         "issued": issued,
         "address": address,

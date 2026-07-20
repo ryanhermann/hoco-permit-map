@@ -6,8 +6,8 @@ from build import assemble, emit
 
 
 def _permit(id_, issued, address, tract="606901"):
-    return {"id": id_, "type": "T", "category": "Commercial", "owner": "O",
-            "contractor": "C", "phone": "", "description": "D",
+    return {"id": id_, "type": "T", "category": "Commercial",
+            "contractor": "C", "description": "D",
             "issued": issued, "address": address, "tract": tract,
             "cost": 1.0, "units": 0, "source": issued[:7]}
 

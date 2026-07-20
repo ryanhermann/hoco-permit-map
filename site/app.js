@@ -39,7 +39,6 @@
     el.innerHTML = `<h3></h3><dl>
       <dt>Permit</dt><dd class="pid"></dd>
       <dt>Issued</dt><dd class="pissued"></dd>
-      <dt>Owner</dt><dd class="powner"></dd>
       <dt>Contractor</dt><dd class="pcontractor"></dd>
       <dt>Est. cost</dt><dd class="pcost"></dd>
       <dt>Source</dt><dd class="psource"></dd>
@@ -47,7 +46,6 @@
     el.querySelector("h3").textContent = `${p.type} — ${p.address}`;
     el.querySelector(".pid").textContent = p.id;
     el.querySelector(".pissued").textContent = p.issued;
-    el.querySelector(".powner").textContent = p.owner || "—";
     el.querySelector(".pcontractor").textContent = p.contractor || "—";
     el.querySelector(".pcost").textContent = money(p.cost);
     el.querySelector(".psource").textContent = `${p.source} report`;
