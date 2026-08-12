@@ -1,4 +1,10 @@
 {
+ "10000 RUNNING SAND KNOLL, LAUREL, MD 20723": {
+  "lat": 39.141634468695,
+  "lng": -76.863024829003,
+  "quality": "exact",
+  "tract": "606808"
+ },
  "10000 TOWN CENTER AVE, STE B, COLUMBIA, MD 21044": {
   "lat": 39.214473848771,
   "lng": -76.864877689816,
@@ -12,6 +18,12 @@
   "tract": "605403"
  },
  "10001 WINDSTREAM DR U 707, COLUMBIA, MD 21044": {
+  "lat": 39.220421039959,
+  "lng": -76.861243610968,
+  "quality": "approx",
+  "tract": "605403"
+ },
+ "10001 WINDSTREAM DR U 808, COLUMBIA, MD 21044": {
   "lat": 39.220421039959,
   "lng": -76.861243610968,
   "quality": "approx",
@@ -82,6 +94,12 @@
   "lng": -76.850347729381,
   "quality": "exact",
   "tract": "606807"
+ },
+ "10047 GERMAN RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.289450890346,
+  "lng": -76.858788941439,
+  "quality": "exact",
+  "tract": "602201"
  },
  "10051 WINDSTREAM DR 1, COLUMBIA, MD 21044": {
   "lat": 39.220650830758,
@@ -161,6 +179,12 @@
   "quality": "exact",
   "tract": "605403"
  },
+ "10106 GREEN CLOVER DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.312583596754,
+  "lng": -76.855928900266,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "10107 WINDSTREAM DR, UNIT 1-6, COLUMBIA, MD 21044": {
   "lat": 39.220941352779,
   "lng": -76.861724330667,
@@ -190,6 +214,12 @@
   "lng": -76.861683300774,
   "quality": "exact",
   "tract": "606808"
+ },
+ "10130 MAXINE ST, ELLICOTT CITY, MD 21042": {
+  "lat": 39.245678362078,
+  "lng": -76.861267275471,
+  "quality": "exact",
+  "tract": "602304"
  },
  "10135 SHAKER DR, COLUMBIA, MD 21046": {
   "lat": 39.180008247456,
@@ -221,11 +251,35 @@
   "quality": "exact",
   "tract": "602100"
  },
+ "10186 GLOBE DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.277497309554,
+  "lng": -76.863160850971,
+  "quality": "exact",
+  "tract": "602303"
+ },
+ "10194 BRECONSHIRE RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.266847027574,
+  "lng": -76.865288414453,
+  "quality": "exact",
+  "tract": "602303"
+ },
  "10201 CAMELFORD CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.260311255661,
   "lng": -76.864961847717,
   "quality": "exact",
   "tract": "602303"
+ },
+ "10201 MAXINE ST, ELLICOTT CITY, MD 21042": {
+  "lat": 39.245860834045,
+  "lng": -76.864698661203,
+  "quality": "exact",
+  "tract": "602304"
+ },
+ "10205 SCAGGSVILLE RD, LAUREL, MD 20723": {
+  "lat": 39.131127598456,
+  "lng": -76.867771096147,
+  "quality": "exact",
+  "tract": "606805"
  },
  "10207 EBB TIDE LN, LAUREL, MD 20723": {
   "lat": 39.136404232797,
@@ -233,9 +287,21 @@
   "quality": "exact",
   "tract": "606808"
  },
+ "10209 SPRUCE WAY, ELLICOTT CITY, MD 21042": {
+  "lat": 39.304509043391,
+  "lng": -76.866594082375,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "10209 TUSCANY RD, ELLICOTT CITY, MD 21042": {
   "lat": 39.275469348452,
   "lng": -76.863241250061,
+  "quality": "exact",
+  "tract": "602303"
+ },
+ "10217 BLANDFORD WAY, ELLICOTT CITY, MD 21042": {
+  "lat": 39.260012265475,
+  "lng": -76.864916667696,
   "quality": "exact",
   "tract": "602303"
  },
@@ -269,6 +335,24 @@
   "quality": "exact",
   "tract": "602303"
  },
+ "10236 LITTLE BRICK HOUSE CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.271894254218,
+  "lng": -76.868476527653,
+  "quality": "exact",
+  "tract": "602303"
+ },
+ "10239 FAIRWAY DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.276903160246,
+  "lng": -76.865335414851,
+  "quality": "exact",
+  "tract": "602303"
+ },
+ "10248 WETHERBURN RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.302391162492,
+  "lng": -76.869666907147,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "10251 RALEIGH TAVERN LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.300058897966,
   "lng": -76.863829499943,
@@ -281,6 +365,12 @@
   "quality": "exact",
   "tract": "606803"
  },
+ "10273 WETHERBURN RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.302402304214,
+  "lng": -76.871030525844,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "10275 LITTLE PATUXENT PKWY, COLUMBIA, MD 21044": {
   "lat": 39.21347979266,
   "lng": -76.857504772394,
@@ -292,6 +382,12 @@
   "lng": -76.857504772394,
   "quality": "exact",
   "tract": "605404"
+ },
+ "10288 SHAKER DR, COLUMBIA, MD 21046": {
+  "lat": 39.181253598385,
+  "lng": -76.87051946793,
+  "quality": "exact",
+  "tract": "606701"
  },
  "10300 LITTLE PATUXENT PKWY 5501, COLUMBIA, MD 21044": {
   "lat": 39.214981682885,
@@ -306,6 +402,12 @@
   "tract": "605404"
  },
  "10300 LITTLE PATUXENT PKWY, COLUMBIA, MD 21044": {
+  "lat": 39.214981682885,
+  "lng": -76.857773338502,
+  "quality": "exact",
+  "tract": "605404"
+ },
+ "10300 LITTLE PATUXENT PKWY, STE 1005, COLUMBIA, MD 21044": {
   "lat": 39.214981682885,
   "lng": -76.857773338502,
   "quality": "exact",
@@ -359,6 +461,18 @@
   "quality": "exact",
   "tract": "606807"
  },
+ "10319 TOWER HILL CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.256346746656,
+  "lng": -76.86838438515,
+  "quality": "exact",
+  "tract": "602303"
+ },
+ "10325 BRECONSHIRE RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.260687346407,
+  "lng": -76.86964022573,
+  "quality": "exact",
+  "tract": "602303"
+ },
  "10328 CONGRESSIONAL CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.28716836802,
   "lng": -76.869992085308,
@@ -395,6 +509,12 @@
   "quality": "exact",
   "tract": "605602"
  },
+ "10385 LOMBARDI DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.276762705476,
+  "lng": -76.872632587725,
+  "quality": "exact",
+  "tract": "602303"
+ },
  "10400 OLD COLUMBIA RD, COLUMBIA, MD 21046": {
   "lat": 39.178579447665,
   "lng": -76.872982151614,
@@ -412,6 +532,12 @@
   "lng": -76.873620772222,
   "quality": "exact",
   "tract": "606805"
+ },
+ "10425 GREEN MOUNTAIN CIR, COLUMBIA, MD 21044": {
+  "lat": 39.222219852185,
+  "lng": -76.865240827936,
+  "quality": "exact",
+  "tract": "605403"
  },
  "10430 SHADY ACRES LN, LAUREL, MD 20723": {
   "lat": 39.134669365173,
@@ -454,6 +580,12 @@
   "lng": -76.9418235,
   "quality": "approx",
   "tract": null
+ },
+ "10535 HOUNSLOW DR, WOODSTOCK, MD 21163": {
+  "lat": 39.312005426573,
+  "lng": -76.886192784839,
+  "quality": "exact",
+  "tract": "603001"
  },
  "10555 GLEN HANNAH DR, LAUREL, MD 20723": {
   "lat": 39.144006648729,
@@ -539,11 +671,23 @@
   "quality": "approx",
   "tract": null
  },
+ "10630 BROWNS FARM RD, WOODSTOCK, MD 21163": {
+  "lat": 39.320734855911,
+  "lng": -76.878932221895,
+  "quality": "exact",
+  "tract": "603001"
+ },
  "10636 WARBURTON CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.281853152803,
   "lng": -76.880011368451,
   "quality": "exact",
   "tract": "602303"
+ },
+ "10664 HARDING RD, LAUREL, MD 20723": {
+  "lat": 39.134449047792,
+  "lng": -76.881044171859,
+  "quality": "exact",
+  "tract": "606805"
  },
  "10676 STANSFIELD RD, LAUREL, MD 20723": {
   "lat": 39.1330724,
@@ -574,6 +718,12 @@
   "lng": -76.882870793341,
   "quality": "approx",
   "tract": "605602"
+ },
+ "10710 HILLINGDON RD, WOODSTOCK, MD 21163": {
+  "lat": 39.310646453695,
+  "lng": -76.888010306646,
+  "quality": "exact",
+  "tract": "603001"
  },
  "10717 CORDAGE WALK, COLUMBIA, MD 21044": {
   "lat": 39.210361292125,
@@ -647,6 +797,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "10837 SCAGGSVILLE RD, LAUREL, MD 20723": {
+  "lat": 39.142010579941,
+  "lng": -76.889003292698,
+  "quality": "exact",
+  "tract": "606805"
+ },
  "10840 LITTLE PATUXENT PKWY, STE 403, COLUMBIA, MD 21044": {
   "lat": 39.216034871576,
   "lng": -76.877767935992,
@@ -698,6 +854,12 @@
  "11001 AUDREY LN, LAUREL, MD 20723": {
   "quality": "failed"
  },
+ "11003 HICKORY RIDGE RD, COLUMBIA, MD 21044": {
+  "lat": 39.209348985849,
+  "lng": -76.892864546017,
+  "quality": "exact",
+  "tract": "605601"
+ },
  "11008 BITTERSWEET CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.249335865494,
   "lng": -76.893911449011,
@@ -724,6 +886,12 @@
   "lng": -76.893485367239,
   "quality": "exact",
   "tract": "603001"
+ },
+ "11091 JOHNS HOPKINS RD, BLDG 201, LAUREL, MD 20723": {
+  "lat": 39.15857047379778,
+  "lng": -76.89961514339143,
+  "quality": "approx",
+  "tract": null
  },
  "11099 RESORT RD, ELLICOTT CITY, MD 21042": {
   "lat": 39.29967175363,
@@ -779,6 +947,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "11100 JOHNS HOPKINS RD, BLDG 25, LAUREL, MD 20723": {
+  "lat": 39.160972933131,
+  "lng": -76.8998101777,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "11100 JOHNS HOPKINS RD, BLDG 26, LAUREL, MD 20723": {
   "lat": 39.160972933131,
   "lng": -76.8998101777,
@@ -798,6 +972,12 @@
   "tract": "605105"
  },
  "11100 JOHNS HOPKINS RD, BLDG 5, LAUREL, MD 20723": {
+  "lat": 39.160972933131,
+  "lng": -76.8998101777,
+  "quality": "exact",
+  "tract": "605105"
+ },
+ "11100 JOHNS HOPKINS RD, LAUREL, MD 20723": {
   "lat": 39.160972933131,
   "lng": -76.8998101777,
   "quality": "exact",
@@ -844,6 +1024,12 @@
   "lng": -76.897620834387,
   "quality": "exact",
   "tract": "605502"
+ },
+ "11144 EUGENE AVE, FULTON, MD 20759": {
+  "lat": 39.147756865973,
+  "lng": -76.916985831901,
+  "quality": "exact",
+  "tract": "605105"
  },
  "11145 GENTLE ROLLING DR, MARRIOTTSVILLE, MD 21104": {
   "lat": 39.309850626927,
@@ -971,6 +1157,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "11426 HIGH HAY DR, COLUMBIA, MD 21044": {
+  "lat": 39.221939522184,
+  "lng": -76.903714982259,
+  "quality": "exact",
+  "tract": "605502"
+ },
  "11442 HIGH HAY DR, COLUMBIA, MD 21044": {
   "lat": 39.222480265349,
   "lng": -76.903306548045,
@@ -1001,6 +1193,12 @@
   "quality": "exact",
   "tract": "605502"
  },
+ "11540 CHAPEL RISE, CLARKSVILLE, MD 21029": {
+  "lat": 39.23277421345423,
+  "lng": -76.9222401734148,
+  "quality": "approx",
+  "tract": null
+ },
  "11555 JAMESTOWN CT, LAUREL, MD 20723": {
   "lat": 39.134282115612,
   "lng": -76.908761585136,
@@ -1021,6 +1219,12 @@
   "lng": -76.916823758488,
   "quality": "exact",
   "tract": "605105"
+ },
+ "11675 FOXSPUR CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.247227098133,
+  "lng": -76.913595117079,
+  "quality": "exact",
+  "tract": "603004"
  },
  "11690 LAURELOAK CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.250216804222,
@@ -1046,9 +1250,21 @@
   "quality": "exact",
   "tract": "605106"
  },
+ "11716 TERI LYNN DR, FULTON, MD 20759": {
+  "lat": 39.166768940158,
+  "lng": -76.917986363793,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "11719 BRAGDON WOOD, CLARKSVILLE, MD 21029": {
   "lat": 39.228155529636,
   "lng": -76.918707103749,
+  "quality": "exact",
+  "tract": "605104"
+ },
+ "11731 BRAGDON WOOD, CLARKSVILLE, MD 21029": {
+  "lat": 39.228359104033,
+  "lng": -76.918513624035,
   "quality": "exact",
   "tract": "605104"
  },
@@ -1057,6 +1273,12 @@
   "lng": -76.901024534926,
   "quality": "exact",
   "tract": "605601"
+ },
+ "11753 FARSIDE RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.253348253175,
+  "lng": -76.916631666693,
+  "quality": "exact",
+  "tract": "603004"
  },
  "11796 LONE TREE CT, COLUMBIA, MD 21044": {
   "lat": 39.20705634384,
@@ -1123,6 +1345,12 @@
   "lng": -76.919900045741,
   "quality": "exact",
   "tract": "605106"
+ },
+ "11860 WEST MARKET PL, FULTON, MD 20759": {
+  "lat": 39.150343768191,
+  "lng": -76.910107830184,
+  "quality": "exact",
+  "tract": "605105"
  },
  "11860 WEST MARKET PL, STE A-G, FULTON, MD 20759": {
   "lat": 39.150343768191,
@@ -1391,6 +1619,24 @@
   "quality": "exact",
   "tract": "605505"
  },
+ "12141 OXFORD HILLS DR, CLARKSVILLE, MD 21029": {
+  "lat": 39.22205439298235,
+  "lng": -76.9447677546796,
+  "quality": "approx",
+  "tract": null
+ },
+ "12143 CLARKSVILLE PIKE, STE 1+2, CLARKSVILLE, MD 21029": {
+  "lat": 39.216445355820355,
+  "lng": -76.9319211392587,
+  "quality": "approx",
+  "tract": null
+ },
+ "12152 NICOLAR DR, FULTON, MD 20759": {
+  "lat": 39.155576169205,
+  "lng": -76.934606586643,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "12153 NICOLAR DR, FULTON, MD 20759": {
   "lat": 39.155566715666,
   "lng": -76.934313513526,
@@ -1402,6 +1648,12 @@
   "lng": -76.934303969459,
   "quality": "exact",
   "tract": "605105"
+ },
+ "12158 MOUNT ALBERT RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.264957113827,
+  "lng": -76.941237897357,
+  "quality": "exact",
+  "tract": "603004"
  },
  "12159 NICOLAR DR, FULTON, MD 20759": {
   "lat": 39.155578456066,
@@ -1475,11 +1727,35 @@
   "quality": "exact",
   "tract": "605106"
  },
+ "12185 NICOLAR DR, FULTON, MD 20759": {
+  "lat": 39.155629331136,
+  "lng": -76.93416080845,
+  "quality": "exact",
+  "tract": "605105"
+ },
+ "12186 NICOLAR DR, FULTON, MD 20759": {
+  "lat": 39.155710584812,
+  "lng": -76.934278777151,
+  "quality": "exact",
+  "tract": "605105"
+ },
+ "12187 NICOLAR DR, FULTON, MD 20759": {
+  "lat": 39.155633244603,
+  "lng": -76.934151264383,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "12188 CLARKSVILLE PIKE, CLARKSVILLE, MD 21029": {
   "lat": 39.213212006624,
   "lng": -76.936137584916,
   "quality": "exact",
   "tract": "605104"
+ },
+ "12188 NICOLAR DR, FULTON, MD 20759": {
+  "lat": 39.155718491612,
+  "lng": -76.934259494239,
+  "quality": "exact",
+  "tract": "605105"
  },
  "12190 HAYLAND FARM WAY, ELLICOTT CITY, MD 21042": {
   "lat": 39.2386315,
@@ -1571,6 +1847,12 @@
   "quality": "exact",
   "tract": "603004"
  },
+ "12228 MOUNT ALBERT RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.265726564998,
+  "lng": -76.944488915672,
+  "quality": "exact",
+  "tract": "603004"
+ },
  "12272 CLARKSVILLE PIKE, CLARKSVILLE, MD 21029": {
   "lat": 39.210420796113,
   "lng": -76.939050168053,
@@ -1643,6 +1925,12 @@
   "quality": "exact",
   "tract": "605106"
  },
+ "12650 OLD FREDERICK RD, SYKESVILLE, MD 21784": {
+  "lat": 39.321415494089,
+  "lng": -76.951797237077,
+  "quality": "exact",
+  "tract": "603003"
+ },
  "12651 VINCENTS WAY, CLARKSVILLE, MD 21029": {
   "lat": 39.197211596376,
   "lng": -76.940577504945,
@@ -1685,6 +1973,12 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "12909 VISTAVIEW DR, WEST FRIENDSHIP, MD 21794": {
+  "lat": 39.291316224777,
+  "lng": -76.957817207206,
+  "quality": "exact",
+  "tract": "603003"
+ },
  "12930 KENTBURY DR, CLARKSVILLE, MD 21029": {
   "lat": 39.209277766802,
   "lng": -76.962415760409,
@@ -1695,6 +1989,12 @@
   "lat": 39.177110319069,
   "lng": -76.961573034072,
   "quality": "approx",
+  "tract": "605103"
+ },
+ "12950 BRIGHTON DAM RD, CLARKSVILLE, MD 21029": {
+  "lat": 39.203269142745,
+  "lng": -76.963209170173,
+  "quality": "exact",
   "tract": "605103"
  },
  "12954 HIGHLAND RD, HIGHLAND, MD 20777": {
@@ -1775,6 +2075,12 @@
   "quality": "exact",
   "tract": "605104"
  },
+ "13170 TRIADELPHIA RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.269105855597,
+  "lng": -76.970695608457,
+  "quality": "exact",
+  "tract": "603004"
+ },
  "1320 HENRYTON RD, MARRIOTTSVILLE, MD 21104": {
   "lat": 39.336282158765,
   "lng": -76.924791777208,
@@ -1798,6 +2104,12 @@
   "lng": -77.074791009204,
   "quality": "exact",
   "tract": "604001"
+ },
+ "1331 CROWS FOOT RD, MARRIOTTSVILLE, MD 21104": {
+  "lat": 39.336263173551,
+  "lng": -76.934542283854,
+  "quality": "exact",
+  "tract": "603003"
  },
  "13324 HUNT RIDGE, ELLICOTT CITY, MD 21042": {
   "lat": 39.270107542241,
@@ -1826,6 +2138,12 @@
  "13430 CHRIS MAR CT, HIGHLAND, MD 20777": {
   "lat": 39.198838344142,
   "lng": -76.977302480215,
+  "quality": "exact",
+  "tract": "605103"
+ },
+ "13455 ALLNUTT LN, HIGHLAND, MD 20777": {
+  "lat": 39.197016459838,
+  "lng": -76.969429554339,
   "quality": "exact",
   "tract": "605103"
  },
@@ -1919,6 +2237,12 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "13742 BARBERRY WAY, SYKESVILLE, MD 21784": {
+  "lat": 39.338226363884,
+  "lng": -76.991770108832,
+  "quality": "exact",
+  "tract": "604003"
+ },
  "13755 LAKESIDE DR, CLARKSVILLE, MD 21029": {
   "lat": 39.207655942685,
   "lng": -76.989621058028,
@@ -1931,15 +2255,45 @@
   "quality": "approx",
   "tract": null
  },
+ "13813 WAYSIDE DR, CLARKSVILLE, MD 21029": {
+  "lat": 39.190459546069,
+  "lng": -76.993947199922,
+  "quality": "exact",
+  "tract": "605103"
+ },
  "13815 BRIGHTON DAM RD, CLARKSVILLE, MD 21029": {
   "lat": 39.197281850329,
   "lng": -76.991970883358,
   "quality": "exact",
   "tract": "605103"
  },
+ "13840 LAKESIDE DR, CLARKSVILLE, MD 21029": {
+  "lat": 39.210943445777,
+  "lng": -76.995482700633,
+  "quality": "exact",
+  "tract": "605103"
+ },
  "13845 FORSYTHE RD, SYKESVILLE, MD 21784": {
   "lat": 39.343268360204,
   "lng": -76.991940650119,
+  "quality": "exact",
+  "tract": "604003"
+ },
+ "13871 TRIADELPHIA MILL RD, DAYTON, MD 21036": {
+  "lat": 39.217847074442,
+  "lng": -76.996414203359,
+  "quality": "exact",
+  "tract": "605103"
+ },
+ "13922 WAYSIDE DR, CLARKSVILLE, MD 21029": {
+  "lat": 39.192862244709,
+  "lng": -76.997245577016,
+  "quality": "exact",
+  "tract": "605103"
+ },
+ "13951 FREDERICK RD, WEST FRIENDSHIP, MD 21794": {
+  "lat": 39.314740139166,
+  "lng": -76.998161356071,
   "quality": "exact",
   "tract": "604003"
  },
@@ -1970,6 +2324,12 @@
  "14016 CASTLEBAR DR, GLENWOOD, MD 21738": {
   "lat": 39.280256562272,
   "lng": -77.000109638777,
+  "quality": "exact",
+  "tract": "604003"
+ },
+ "14016 CELBRIDGE CT, GLENWOOD, MD 21738": {
+  "lat": 39.277665361817,
+  "lng": -76.999948328734,
   "quality": "exact",
   "tract": "604003"
  },
@@ -2021,6 +2381,12 @@
   "quality": "exact",
   "tract": "605104"
  },
+ "14120 TWISTING LN, DAYTON, MD 21036": {
+  "lat": 39.226292924962,
+  "lng": -77.007873620013,
+  "quality": "exact",
+  "tract": "605104"
+ },
  "14212 FREDERICK RD, COOKSVILLE, MD 21723": {
   "lat": 39.317136740543,
   "lng": -77.007070373046,
@@ -2063,6 +2429,18 @@
   "quality": "exact",
   "tract": "604004"
  },
+ "14414 DORSEY MILL RD, GLENWOOD, MD 21738": {
+  "lat": 39.262714136243,
+  "lng": -77.013893921483,
+  "quality": "exact",
+  "tract": "604004"
+ },
+ "1442 HERITAGE RIDGE RD, WOODBINE, MD 21797": {
+  "lat": 39.32954117379582,
+  "lng": -77.06148922770987,
+  "quality": "approx",
+  "tract": null
+ },
  "14528 OLD FREDERICK RD, COOKSVILLE, MD 21723": {
   "lat": 39.337526157457,
   "lng": -77.015209641619,
@@ -2081,11 +2459,29 @@
   "quality": "exact",
   "tract": "604004"
  },
+ "14581 MACCLINTOCK DR, GLENWOOD, MD 21738": {
+  "lat": 39.277765273663,
+  "lng": -77.027206783619,
+  "quality": "exact",
+  "tract": "604004"
+ },
+ "14600 MONTICELLO DR, COOKSVILLE, MD 21723": {
+  "lat": 39.330135339245,
+  "lng": -77.013841614317,
+  "quality": "exact",
+  "tract": "604003"
+ },
  "14625 TRIADELPHIA MILL RD, DAYTON, MD 21036": {
   "lat": 39.229022495426,
   "lng": -77.021766699328,
   "quality": "exact",
   "tract": "605104"
+ },
+ "14800 CARRIAGE MILL DR, WOODBINE, MD 21797": {
+  "lat": 39.327060230203,
+  "lng": -77.023979745709,
+  "quality": "approx",
+  "tract": "604001"
  },
  "14820 CHESTNUT CT, GLENELG, MD 21737": {
   "lat": 39.243819406242,
@@ -2194,6 +2590,12 @@
   "lng": -77.047417367266,
   "quality": "exact",
   "tract": "604003"
+ },
+ "1564 LONG CORNER RD, MOUNT AIRY, MD 21771": {
+  "lat": 39.332218240547,
+  "lng": -77.156495008249,
+  "quality": "exact",
+  "tract": "604001"
  },
  "16006 PHEASANT RIDGE CT, WOODBINE, MD 21797": {
   "lat": 39.292957829499,
@@ -2309,6 +2711,12 @@
   "quality": "exact",
   "tract": "604001"
  },
+ "1730 BRICKELL WAY, MARRIOTTSVILLE, MD 21104": {
+  "lat": 39.34235487896694,
+  "lng": -76.93396015621634,
+  "quality": "approx",
+  "tract": null
+ },
  "1731 ARCHERS GLEN, SYKESVILLE, MD 21784": {
   "lat": 39.323690915425,
   "lng": -76.965123438472,
@@ -2330,15 +2738,33 @@
   "quality": "exact",
   "tract": "604001"
  },
+ "1816 LONG CORNER RD, MOUNT AIRY, MD 21771": {
+  "lat": 39.327212629295,
+  "lng": -77.157298966458,
+  "quality": "exact",
+  "tract": "604001"
+ },
  "1909 SYCAMORE SPRING CT, COOKSVILLE, MD 21723": {
   "lat": 39.318239309303,
   "lng": -77.023309818846,
   "quality": "exact",
   "tract": "604003"
  },
+ "1921 DAVIS BRANCH RD, WOODSTOCK, MD 21163": {
+  "lat": 39.318197759956895,
+  "lng": -76.86722025034548,
+  "quality": "approx",
+  "tract": null
+ },
  "1944 SYCAMORE SPRING CT, COOKSVILLE, MD 21723": {
   "lat": 39.319662072438,
   "lng": -77.023717768625,
+  "quality": "exact",
+  "tract": "604003"
+ },
+ "1949 SYCAMORE SPRING CT, COOKSVILLE, MD 21723": {
+  "lat": 39.31971456469,
+  "lng": -77.023966692061,
   "quality": "exact",
   "tract": "604003"
  },
@@ -2347,6 +2773,12 @@
   "lng": -76.827206469297,
   "quality": "exact",
   "tract": "602100"
+ },
+ "2050 SAINT JAMES RD, MARRIOTTSVILLE, MD 21104": {
+  "lat": 39.313234271246,
+  "lng": -76.946493251254,
+  "quality": "exact",
+  "tract": "603003"
  },
  "2109 GRANT FARM CT, MARRIOTTSVILLE, MD 21104": {
   "lat": 39.311886516611,
@@ -2377,6 +2809,12 @@
   "lng": -76.964675473946,
   "quality": "exact",
   "tract": "603003"
+ },
+ "2217 SAMANTHA WAY, ELLICOTT CITY, MD 21042": {
+  "lat": 39.310442972484,
+  "lng": -76.84971648588,
+  "quality": "exact",
+  "tract": "602100"
  },
  "2244 KAITLINS CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.31229671875,
@@ -2426,6 +2864,12 @@
   "quality": "exact",
   "tract": "604003"
  },
+ "2350 MARRIOTTSVILLE RD, MARRIOTTSVILLE, MD 21104": {
+  "lat": 39.304703783138,
+  "lng": -76.899131935144,
+  "quality": "exact",
+  "tract": "603001"
+ },
  "2370 MCKENZIE RD, ELLICOTT CITY, MD 21042": {
   "lat": 39.306606620456,
   "lng": -76.843863191224,
@@ -2443,6 +2887,18 @@
   "lng": -76.901745255213,
   "quality": "exact",
   "tract": "603001"
+ },
+ "2380 ADAM DAVID WAY, MARRIOTTSVILLE, MD 21104": {
+  "lat": 39.30799283144,
+  "lng": -76.901661354101,
+  "quality": "exact",
+  "tract": "603001"
+ },
+ "2425 HANNON CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.304315322282,
+  "lng": -76.845609857462,
+  "quality": "exact",
+  "tract": "602100"
  },
  "2454 ANDERSON HILL ST, MARRIOTTSVILLE, MD 21104": {
   "lat": 39.310034013471,
@@ -2465,6 +2921,12 @@
  "2508 HOLLY SPRINGS CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.304474902938,
   "lng": -76.806245240596,
+  "quality": "exact",
+  "tract": "602100"
+ },
+ "2545 ASHBROOK DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.303260552343,
+  "lng": -76.842215919396,
   "quality": "exact",
   "tract": "602100"
  },
@@ -2491,6 +2953,12 @@
   "lng": -77.021082009517,
   "quality": "exact",
   "tract": "604003"
+ },
+ "2606 TURF VALLEY RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.300180336575,
+  "lng": -76.878217429945,
+  "quality": "exact",
+  "tract": "603004"
  },
  "2612 TOBY LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.2979006317,
@@ -2557,6 +3025,12 @@
   "lng": -77.099921093049,
   "quality": "exact",
   "tract": "604003"
+ },
+ "2733 LINKS CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.295292915767,
+  "lng": -76.877541008771,
+  "quality": "exact",
+  "tract": "602201"
  },
  "2801 BELLE HOLLOW CT, GLENWOOD, MD 21738": {
   "lat": 39.304798626629,
@@ -2707,6 +3181,12 @@
   "lng": -77.026781748696,
   "quality": "exact",
   "tract": "604004"
+ },
+ "2921 GREENLOW CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29041539629,
+  "lng": -76.837823356691,
+  "quality": "exact",
+  "tract": "602202"
  },
  "2926 MONTCLAIR DR, ELLICOTT CITY, MD 21043": {
   "lat": 39.290705552025,
@@ -3065,6 +3545,12 @@
   "quality": "exact",
   "tract": "602303"
  },
+ "3315 DEBRA CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.27708445516727,
+  "lng": -76.85449778936908,
+  "quality": "approx",
+  "tract": null
+ },
  "3345 RT 97, GLENWOOD, MD 21738": {
   "lat": 39.278611326316,
   "lng": -77.032267973424,
@@ -3088,6 +3574,12 @@
   "lng": -76.805056083262,
   "quality": "exact",
   "tract": "602900"
+ },
+ "3410 TYLER DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.275946343364,
+  "lng": -76.859409242907,
+  "quality": "exact",
+  "tract": "602304"
  },
  "3430 COURT HOUSE DR, ELLICOTT CITY, MD 21043": {
   "lat": 39.276031434351,
@@ -3194,6 +3686,12 @@
   "quality": "approx",
   "tract": null
  },
+ "3708 MILL CREEK WAY, ELLICOTT CITY, MD 21043": {
+  "lat": 39.27496802723102,
+  "lng": -76.8003125973389,
+  "quality": "approx",
+  "tract": null
+ },
  "3712 MILL CREEK WAY, ELLICOTT CITY, MD 21043": {
   "lat": 39.2743591,
   "lng": -76.8003481,
@@ -3211,6 +3709,12 @@
   "lng": -76.81088691797,
   "quality": "exact",
   "tract": "602800"
+ },
+ "3720 TUSTIN RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.269899758623,
+  "lng": -76.869815818529,
+  "quality": "approx",
+  "tract": "602303"
  },
  "3730 SOFIA CT, GLENWOOD, MD 21738": {
   "lat": 39.270197152888,
@@ -3308,6 +3812,12 @@
   "quality": "exact",
   "tract": "602304"
  },
+ "3835 FONT HILL DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.263579752129,
+  "lng": -76.857489265979,
+  "quality": "exact",
+  "tract": "602304"
+ },
  "3872 FOLLY QUARTER RD, ELLICOTT CITY, MD 21042": {
   "lat": 39.264533773195,
   "lng": -76.921796355665,
@@ -3319,6 +3829,12 @@
   "lng": -76.880298775192,
   "quality": "exact",
   "tract": "602303"
+ },
+ "3901 CAREY CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.26994451232085,
+  "lng": -76.87641260408195,
+  "quality": "approx",
+  "tract": null
  },
  "3912 PAUL MILL RD, ELLICOTT CITY, MD 21042": {
   "lat": 39.263789866892,
@@ -3355,6 +3871,12 @@
   "lng": -76.820479315179,
   "quality": "exact",
   "tract": "602306"
+ },
+ "4002 ZUNI CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.259747934549,
+  "lng": -76.815624024795,
+  "quality": "exact",
+  "tract": "602800"
  },
  "4022 SEABIRD WAY, ELLICOTT CITY, MD 21042": {
   "lat": 39.259684628515,
@@ -3512,6 +4034,12 @@
   "quality": "approx",
   "tract": null
  },
+ "4121 HOGG CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.259668035109,
+  "lng": -76.793945242909,
+  "quality": "exact",
+  "tract": "602700"
+ },
  "4205 FINDLEY LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.2677784,
   "lng": -76.8765715,
@@ -3581,6 +4109,12 @@
   "quality": "exact",
   "tract": "602305"
  },
+ "4265 FINDLEY LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.26706878210117,
+  "lng": -76.87905199991376,
+  "quality": "approx",
+  "tract": null
+ },
  "4277 COATTAIL CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.253476065532,
   "lng": -76.841125118228,
@@ -3592,6 +4126,12 @@
   "lng": -76.9756125742,
   "quality": "exact",
   "tract": "605104"
+ },
+ "4293 RED BANDANA WAY, ELLICOTT CITY, MD 21042": {
+  "lat": 39.254164703329,
+  "lng": -76.839706743488,
+  "quality": "exact",
+  "tract": "602305"
  },
  "4300 CENTENNIAL LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.254591429849,
@@ -3677,6 +4217,12 @@
   "quality": "approx",
   "tract": null
  },
+ "4505 REBECCA CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.245896019073,
+  "lng": -76.804133848865,
+  "quality": "exact",
+  "tract": "602800"
+ },
  "4513 RUSTY GATE, ELLICOTT CITY, MD 21043": {
   "lat": 39.248078822178,
   "lng": -76.810979082323,
@@ -3742,6 +4288,12 @@
   "lng": -76.842585843712,
   "quality": "exact",
   "tract": "602305"
+ },
+ "4621 DOWER CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.244918817744,
+  "lng": -76.824339747085,
+  "quality": "exact",
+  "tract": "602302"
  },
  "4631 CHATSWORTH WAY, ELLICOTT CITY, MD 21043": {
   "lat": 39.242439586139,
@@ -3815,6 +4367,12 @@
   "quality": "exact",
   "tract": "602302"
  },
+ "4809 SOUTH HAVEN DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.237748843733,
+  "lng": -76.795263988052,
+  "quality": "exact",
+  "tract": "602700"
+ },
  "4824 LAUREN CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.239146860649,
   "lng": -76.805877394078,
@@ -3826,6 +4384,12 @@
   "lng": -76.772150460663,
   "quality": "exact",
   "tract": "601104"
+ },
+ "4849 BONNIE VIEW CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.236555119506,
+  "lng": -76.786047955158,
+  "quality": "exact",
+  "tract": "602700"
  },
  "4880 MANOR LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.23732083342,
@@ -3844,6 +4408,12 @@
   "lng": -76.844586210432,
   "quality": "exact",
   "tract": "605401"
+ },
+ "4906 CANVASBACK DR, COLUMBIA, MD 21045": {
+  "lat": 39.235498646716,
+  "lng": -76.836012504063,
+  "quality": "exact",
+  "tract": "606601"
  },
  "4907 HARROGATE RD, ELLICOTT CITY, MD 21043": {
   "lat": 39.236932189539,
@@ -3886,6 +4456,12 @@
   "lng": -76.798678203257,
   "quality": "exact",
   "tract": "602302"
+ },
+ "4923 CLEARWATER DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.236855820032,
+  "lng": -76.793716564745,
+  "quality": "exact",
+  "tract": "602700"
  },
  "4924 ILCHESTER RD, ELLICOTT CITY, MD 21043": {
   "lat": 39.23597291949,
@@ -4013,6 +4589,12 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "5022 DURHAM ROAD EAST, COLUMBIA, MD 21044": {
+  "lat": 39.233554907653,
+  "lng": -76.86566710355,
+  "quality": "exact",
+  "tract": "605503"
+ },
  "5022 TEN MILLS RD, COLUMBIA, MD 21044": {
   "lat": 39.234071902377,
   "lng": -76.856511223669,
@@ -4043,6 +4625,12 @@
   "quality": "exact",
   "tract": "605401"
  },
+ "5036 DOVER CT, COLUMBIA, MD 21044": {
+  "lat": 39.234880980575,
+  "lng": -76.872097719579,
+  "quality": "exact",
+  "tract": "605503"
+ },
  "5038 TEN OAKS RD, CLARKSVILLE, MD 21029": {
   "lat": 39.23203978986,
   "lng": -76.977778639354,
@@ -4067,11 +4655,23 @@
   "quality": "exact",
   "tract": "601104"
  },
+ "5095 GREEN BRIDGE RD, DAYTON, MD 21036": {
+  "lat": 39.230926850564,
+  "lng": -76.993834820293,
+  "quality": "exact",
+  "tract": "605103"
+ },
  "5100 COLUMBIA RD, COLUMBIA, MD 21044": {
   "lat": 39.23544431614,
   "lng": -76.843619117476,
   "quality": "exact",
   "tract": "605401"
+ },
+ "5100 CRESTFIELD CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.229058904748,
+  "lng": -76.793475339219,
+  "quality": "exact",
+  "tract": "601105"
  },
  "5104 CRESTFIELD CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.229050016715,
@@ -4097,17 +4697,41 @@
   "quality": "exact",
   "tract": "601104"
  },
+ "5124 WELLINGHALL WAY, COLUMBIA, MD 21044": {
+  "lat": 39.230389501225,
+  "lng": -76.898461496175,
+  "quality": "exact",
+  "tract": "605502"
+ },
  "5125 GOOD MEMORY LN, ELLICOTT CITY, MD 21043": {
   "lat": 39.233256376421,
   "lng": -76.783972113686,
   "quality": "exact",
   "tract": "602700"
  },
+ "5129 SANTE FE CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.240213169991,
+  "lng": -76.818927529266,
+  "quality": "exact",
+  "tract": "602302"
+ },
+ "5133 CRESTWOOD LN, ELLICOTT CITY, MD 21043": {
+  "lat": 39.234687241636,
+  "lng": -76.779634250814,
+  "quality": "exact",
+  "tract": "601104"
+ },
  "5134 THUNDER HILL RD, COLUMBIA, MD 21045": {
   "lat": 39.229050691204,
   "lng": -76.830151255603,
   "quality": "exact",
   "tract": "606601"
+ },
+ "5141 HESPERUS DR, COLUMBIA, MD 21044": {
+  "lat": 39.232368527613,
+  "lng": -76.874906243985,
+  "quality": "exact",
+  "tract": "605503"
  },
  "5145 LITTLE CREEK DR, ELLICOTT CITY, MD 21043": {
   "lat": 39.228881689054,
@@ -4211,6 +4835,12 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "5304 GLADYS PL, ELLICOTT CITY, MD 21043": {
+  "lat": 39.227517484923,
+  "lng": -76.80378127275812,
+  "quality": "approx",
+  "tract": null
+ },
  "5318 BRIAR OAK CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.222095946406,
   "lng": -76.776332903255,
@@ -4232,6 +4862,12 @@
  "5328 CATALPA CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.239649928225,
   "lng": -76.952167931868,
+  "quality": "exact",
+  "tract": "605104"
+ },
+ "5333 BROADWATER LN, CLARKSVILLE, MD 21029": {
+  "lat": 39.228835193731,
+  "lng": -76.972038036785,
   "quality": "exact",
   "tract": "605104"
  },
@@ -4277,11 +4913,23 @@
   "quality": "approx",
   "tract": "605404"
  },
+ "5391 SUNNY FIELD CT, ELLICOTT CITY, MD 21043": {
+  "lat": 39.21918086864,
+  "lng": -76.777856550678,
+  "quality": "exact",
+  "tract": "601104"
+ },
  "5401 MEADOW POND DR, ELLICOTT CITY, MD 21043": {
   "lat": 39.222205215347,
   "lng": -76.781535151346,
   "quality": "approx",
   "tract": "601104"
+ },
+ "5406 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
+  "lat": 39.225328772706035,
+  "lng": -76.77880242079267,
+  "quality": "approx",
+  "tract": null
  },
  "5409 FALLRIVER ROW CT, COLUMBIA, MD 21044": {
   "lat": 39.224249816759,
@@ -4294,6 +4942,12 @@
   "lng": -76.7788993,
   "quality": "approx",
   "tract": null
+ },
+ "5410 FREELARK PL, COLUMBIA, MD 21045": {
+  "lat": 39.222692520677,
+  "lng": -76.815758105873,
+  "quality": "exact",
+  "tract": "606607"
  },
  "5410 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
   "quality": "failed"
@@ -4340,8 +4994,20 @@
  "5432 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
   "quality": "failed"
  },
+ "5433 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
+  "lat": 39.22601486111382,
+  "lng": -76.77821692134837,
+  "quality": "approx",
+  "tract": null
+ },
  "5434 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
   "quality": "failed"
+ },
+ "5435 PONDVIEW LN, ELLICOTT CITY, MD 21043": {
+  "lat": 39.22608160287171,
+  "lng": -76.77820472312511,
+  "quality": "approx",
+  "tract": null
  },
  "5436 HARRIS FARM LN, CLARKSVILLE, MD 21029": {
   "lat": 39.22355596801,
@@ -4415,6 +5081,12 @@
   "quality": "exact",
   "tract": "605403"
  },
+ "5462 HARPERS FARM RD, APT C1, COLUMBIA, MD 21044": {
+  "lat": 39.221638311792,
+  "lng": -76.891169698085,
+  "quality": "exact",
+  "tract": "605502"
+ },
  "5465 HARRIS FARM LN, CLARKSVILLE, MD 21029": {
   "lat": 39.224171613298,
   "lng": -76.981969143807,
@@ -4442,6 +5114,12 @@
  "5472 WINGBORNE CT, COLUMBIA, MD 21045": {
   "lat": 39.220647865318,
   "lng": -76.811131376224,
+  "quality": "exact",
+  "tract": "606607"
+ },
+ "5473 LUCKPENNY PL, COLUMBIA, MD 21045": {
+  "lat": 39.226043698399,
+  "lng": -76.821840802908,
   "quality": "exact",
   "tract": "606607"
  },
@@ -4475,11 +5153,29 @@
   "quality": "exact",
   "tract": "601105"
  },
+ "5505 WATERLOO RD, ELLICOTT CITY, MD 21043": {
+  "lat": 39.219792467348,
+  "lng": -76.807307649674,
+  "quality": "exact",
+  "tract": "601105"
+ },
  "5507 PHELPS LUCK DR, COLUMBIA, MD 21045": {
   "lat": 39.220071288152,
   "lng": -76.824567460376,
   "quality": "exact",
   "tract": "606607"
+ },
+ "5511 PINTAIL RD, UNIT A, ELKRIDGE, MD 21075": {
+  "lat": 39.21575120063068,
+  "lng": -76.70605085833718,
+  "quality": "approx",
+  "tract": null
+ },
+ "5511 PINTAIL RD, UNIT B, ELKRIDGE, MD 21075": {
+  "lat": 39.21573768062774,
+  "lng": -76.70607664975994,
+  "quality": "approx",
+  "tract": null
  },
  "5512 ASPEN DALE CT, ELLICOTT CITY, MD 21043": {
   "lat": 39.220307715819,
@@ -4577,6 +5273,12 @@
   "quality": "exact",
   "tract": "605505"
  },
+ "5677 PHELPS LUCK DR, COLUMBIA, MD 21045": {
+  "lat": 39.215052572807,
+  "lng": -76.82152706784,
+  "quality": "exact",
+  "tract": "606607"
+ },
  "5679 RAILROAD AVE, ELKRIDGE, MD 21075": {
   "lat": 39.21447130755,
   "lng": -76.709098950318,
@@ -4588,6 +5290,12 @@
   "lng": -76.816463174264,
   "quality": "exact",
   "tract": "606607"
+ },
+ "5709 ADAMS WAY, CLARKSVILLE, MD 21029": {
+  "lat": 39.211346813113,
+  "lng": -76.962212161686,
+  "quality": "exact",
+  "tract": "605103"
  },
  "5710 TROTTER RD, CLARKSVILLE, MD 21029": {
   "lat": 39.214837807394,
@@ -4679,6 +5387,12 @@
   "quality": "exact",
   "tract": "605404"
  },
+ "5910 WATCH CHAIN WAY U 605, COLUMBIA, MD 21044": {
+  "lat": 39.20859385228,
+  "lng": -76.892673007533,
+  "quality": "approx",
+  "tract": "605601"
+ },
  "5914 MORNINGBIRD LN, COLUMBIA, MD 21045": {
   "lat": 39.2105945929,
   "lng": -76.839329894486,
@@ -4727,6 +5441,12 @@
   "quality": "exact",
   "tract": "601103"
  },
+ "5940 TROTTER RD, CLARKSVILLE, MD 21029": {
+  "lat": 39.208550444434,
+  "lng": -76.919105912215,
+  "quality": "exact",
+  "tract": "605505"
+ },
  "5950 SYMPHONY WOODS RD, COLUMBIA, MD 21044": {
   "lat": 39.208973895666,
   "lng": -76.859079049413,
@@ -4762,6 +5482,12 @@
   "lng": -76.848737362078,
   "quality": "exact",
   "tract": "606603"
+ },
+ "5989 SANDY RIDGE, ELKRIDGE, MD 21075": {
+  "lat": 39.20585070197,
+  "lng": -76.765345176595,
+  "quality": "approx",
+  "tract": "601103"
  },
  "6001 TAMAR DR, COLUMBIA, MD 21045": {
   "lat": 39.205873117013,
@@ -4835,6 +5561,12 @@
   "quality": "exact",
   "tract": "601105"
  },
+ "6031 HANOVER RD, HANOVER, MD 21076": {
+  "lat": 39.205380680672,
+  "lng": -76.722755550361,
+  "quality": "exact",
+  "tract": "601206"
+ },
  "6031 UNIVERSITY BLVD, ELLICOTT CITY, MD 21043": {
   "lat": 39.209903122062,
   "lng": -76.797442546081,
@@ -4852,6 +5584,18 @@
   "lng": -76.715682336914,
   "quality": "exact",
   "tract": "601206"
+ },
+ "6036 ROCK GLEN DR, ELKRIDGE, MD 21075": {
+  "lat": 39.208232875185,
+  "lng": -76.732789414623,
+  "quality": "exact",
+  "tract": "601205"
+ },
+ "6039 CHARLES EDWARD TER, COLUMBIA, MD 21045": {
+  "lat": 39.203592249919,
+  "lng": -76.833250669631,
+  "quality": "exact",
+  "tract": "606604"
  },
  "6040 WILD GINGER CT, COLUMBIA, MD 21044": {
   "lat": 39.206976068039,
@@ -4877,6 +5621,12 @@
   "quality": "exact",
   "tract": "606604"
  },
+ "6056 TOOMEY LN, ELKRIDGE, MD 21075": {
+  "lat": 39.209917520529,
+  "lng": -76.712536185471,
+  "quality": "exact",
+  "tract": "601206"
+ },
  "6058 HUNT CLUB RD, UNIT A, ELKRIDGE, MD 21075": {
   "lat": 39.203498418675,
   "lng": -76.739063771599,
@@ -4895,11 +5645,23 @@
   "quality": "exact",
   "tract": "606604"
  },
+ "6063 HANOVER RD, HANOVER, MD 21076": {
+  "lat": 39.204383092968,
+  "lng": -76.722226712897,
+  "quality": "exact",
+  "tract": "601206"
+ },
  "6072 CEDAR WOOD DR, COLUMBIA, MD 21044": {
   "lat": 39.204553616823,
   "lng": -76.888365354399,
   "quality": "exact",
   "tract": "605601"
+ },
+ "6084 MAJORS LN, COLUMBIA, MD 21045": {
+  "lat": 39.203098985945,
+  "lng": -76.82353842905,
+  "quality": "exact",
+  "tract": "606604"
  },
  "6085 DUCKETTS LN, ELKRIDGE, MD 21075": {
   "lat": 39.20428087059,
@@ -4955,6 +5717,12 @@
   "quality": "exact",
   "tract": "606706"
  },
+ "6108 MAJORS LN, COLUMBIA, MD 21045": {
+  "lat": 39.20358773474879,
+  "lng": -76.82487628458928,
+  "quality": "approx",
+  "tract": null
+ },
  "6108 THOMPSON DR, CLARKSVILLE, MD 21029": {
   "lat": 39.203713185759,
   "lng": -76.939806282883,
@@ -4972,6 +5740,12 @@
   "lng": -76.806737069989,
   "quality": "exact",
   "tract": "606706"
+ },
+ "6113 TAMAR DR, COLUMBIA, MD 21045": {
+  "lat": 39.20361226091,
+  "lng": -76.829603387156,
+  "quality": "exact",
+  "tract": "606604"
  },
  "6114 MAJORS LN, COLUMBIA, MD 21045": {
   "lat": 39.203447240404,
@@ -5045,6 +5819,12 @@
   "quality": "exact",
   "tract": "601206"
  },
+ "6143 WATERLOO RD, ELLICOTT CITY, MD 21043": {
+  "lat": 39.20189582709,
+  "lng": -76.795122473547,
+  "quality": "exact",
+  "tract": "601108"
+ },
  "6145 PHELPS LN, HANOVER, MD 21076": {
   "lat": 39.200792181821,
   "lng": -76.723039972279,
@@ -5074,6 +5854,18 @@
   "lng": -76.848284167672,
   "quality": "exact",
   "tract": "606603"
+ },
+ "6152 NIGHTSTREET HILL, COLUMBIA, MD 21045": {
+  "lat": 39.201441851644,
+  "lng": -76.848314889476,
+  "quality": "exact",
+  "tract": "606603"
+ },
+ "6160 OLD WASHINGTON RD, ELKRIDGE, MD 21075": {
+  "lat": 39.207967742822,
+  "lng": -76.721309388868,
+  "quality": "exact",
+  "tract": "601206"
  },
  "6161 COLUMBIA CROSSING CIR, COLUMBIA, MD 21045": {
   "lat": 39.195865472401,
@@ -5159,11 +5951,29 @@
   "quality": "exact",
   "tract": "606604"
  },
+ "6244 AUDUBON DR, COLUMBIA, MD 21044": {
+  "lat": 39.198971827872,
+  "lng": -76.877038465506,
+  "quality": "exact",
+  "tract": "605602"
+ },
  "6245 PATUXENT QUARTER RD, HANOVER, MD 21076": {
   "lat": 39.197052974692,
   "lng": -76.718647305865,
   "quality": "exact",
   "tract": "601206"
+ },
+ "6250 COLUMBIA CROSSING CIR, STE L, COLUMBIA, MD 21045": {
+  "lat": 39.19822143752,
+  "lng": -76.814534985479,
+  "quality": "approx",
+  "tract": "606706"
+ },
+ "6250 COLUMBIA CROSSING CIR, STE L1, COLUMBIA, MD 21045": {
+  "lat": 39.19822143752,
+  "lng": -76.814534985479,
+  "quality": "exact",
+  "tract": "606706"
  },
  "6254 DEEP RIVER CANYON, COLUMBIA, MD 21045": {
   "lat": 39.199877450126,
@@ -5267,6 +6077,12 @@
   "quality": "exact",
   "tract": "601206"
  },
+ "6325 WOODSIDE CT, STE 200, COLUMBIA, MD 21046": {
+  "lat": 39.195166479653,
+  "lng": -76.853098731097,
+  "quality": "exact",
+  "tract": "606701"
+ },
  "6326 GOLDEN STAR PL, COLUMBIA, MD 21044": {
   "lat": 39.209739851563,
   "lng": -76.91405906056,
@@ -5303,6 +6119,12 @@
   "quality": "exact",
   "tract": "606706"
  },
+ "6348 DARING PRINCE WAY, COLUMBIA, MD 21044": {
+  "lat": 39.195562445977,
+  "lng": -76.918789252131,
+  "quality": "exact",
+  "tract": "605505"
+ },
  "6351 HANOVER CROSSING WAY, HANOVER, MD 21076": {
   "lat": 39.194992408196,
   "lng": -76.720265794365,
@@ -5327,17 +6149,41 @@
   "quality": "exact",
   "tract": "606706"
  },
+ "6365 OLD WASHINGTON RD, ELKRIDGE, MD 21075": {
+  "lat": 39.203985497427,
+  "lng": -76.729660984871,
+  "quality": "exact",
+  "tract": "601206"
+ },
  "6369 MORNING TIME LN, COLUMBIA, MD 21044": {
   "lat": 39.194201884956,
   "lng": -76.921351111736,
   "quality": "exact",
   "tract": "605504"
  },
+ "6379 OLD WASHINGTON RD, ELKRIDGE, MD 21075": {
+  "lat": 39.203463968345,
+  "lng": -76.730753747711,
+  "quality": "exact",
+  "tract": "601206"
+ },
  "638 RIVER RD, SYKESVILLE, MD 21784": {
   "lat": 39.35391441366,
   "lng": -76.949827482327,
   "quality": "exact",
   "tract": "603003"
+ },
+ "6380 MORNING TIME LN, COLUMBIA, MD 21044": {
+  "lat": 39.194299682441,
+  "lng": -76.922154775917,
+  "quality": "exact",
+  "tract": "605504"
+ },
+ "6391 ROWANBERRY DR 101, ELKRIDGE, MD 21075": {
+  "lat": 39.202578849633,
+  "lng": -76.735727396814,
+  "quality": "approx",
+  "tract": "601205"
  },
  "6404 DISTANT MELODY PL, COLUMBIA, MD 21044": {
   "lat": 39.196532097577,
@@ -5387,9 +6233,21 @@
   "quality": "approx",
   "tract": "601204"
  },
+ "6408 SOUTHAMPTON CT, ELKRIDGE, MD 21075": {
+  "lat": 39.201343351644,
+  "lng": -76.776376212323,
+  "quality": "exact",
+  "tract": "601103"
+ },
  "6412 AUTUMN SKY WAY, COLUMBIA, MD 21044": {
   "lat": 39.208351006022,
   "lng": -76.913331036571,
+  "quality": "exact",
+  "tract": "605505"
+ },
+ "6413 DISTANT MELODY PL, COLUMBIA, MD 21044": {
+  "lat": 39.196387453102,
+  "lng": -76.909084587064,
   "quality": "exact",
   "tract": "605505"
  },
@@ -5402,6 +6260,12 @@
  "6420 FREETOWN RD, UNIT 100, COLUMBIA, MD 21044": {
   "lat": 39.195770495502,
   "lng": -76.882369352353,
+  "quality": "exact",
+  "tract": "605602"
+ },
+ "6430 FREETOWN RD, STE 130, COLUMBIA, MD 21044": {
+  "lat": 39.195447266971,
+  "lng": -76.881597279005,
   "quality": "exact",
   "tract": "605602"
  },
@@ -5441,6 +6305,12 @@
   "quality": "exact",
   "tract": "605602"
  },
+ "6473 ONWARD TRL, CLARKSVILLE, MD 21029": {
+  "lat": 39.197342001014,
+  "lng": -76.928437689582,
+  "quality": "exact",
+  "tract": "605504"
+ },
  "6475 SOUTH TROTTER RD, CLARKSVILLE, MD 21029": {
   "lat": 39.193189018266,
   "lng": -76.923260872914,
@@ -5464,6 +6334,12 @@
   "lng": -76.821031924276,
   "quality": "exact",
   "tract": "606604"
+ },
+ "6490 SUMMER CLOUD WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193654971575,
+  "lng": -76.80077351442,
+  "quality": "exact",
+  "tract": "606706"
  },
  "6493 SWIMMER ROW WAY, COLUMBIA, MD 21044": {
   "lat": 39.193347263625,
@@ -5513,6 +6389,18 @@
   "quality": "exact",
   "tract": "605505"
  },
+ "6509 BURGUNDY LN, CLARKSVILLE, MD 21029": {
+  "lat": 39.193866800437,
+  "lng": -76.933196555281,
+  "quality": "exact",
+  "tract": "605504"
+ },
+ "6517 LANGFORD CT, CLARKSVILLE, MD 21029": {
+  "lat": 39.201405821782,
+  "lng": -76.935374635079,
+  "quality": "exact",
+  "tract": "605504"
+ },
  "6521 LANGFORD CT, CLARKSVILLE, MD 21029": {
   "lat": 39.2014391658,
   "lng": -76.93541407303,
@@ -5537,6 +6425,12 @@
   "quality": "exact",
   "tract": "605504"
  },
+ "6534 SMOKEHOUSE CT, COLUMBIA, MD 21045": {
+  "lat": 39.197202885404,
+  "lng": -76.825989051737,
+  "quality": "exact",
+  "tract": "606604"
+ },
  "6534 SOUTH WIND CIR, COLUMBIA, MD 21044": {
   "lat": 39.207372653216,
   "lng": -76.917205394073,
@@ -5555,6 +6449,12 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "6549 BELMONT WOODS RD, ELKRIDGE, MD 21075": {
+  "lat": 39.220144549522,
+  "lng": -76.742713798427,
+  "quality": "exact",
+  "tract": "601104"
+ },
  "6549 STREAM SONG CT, CLARKSVILLE, MD 21029": {
   "quality": "failed"
  },
@@ -5572,6 +6472,18 @@
   "lng": -76.742464517172,
   "quality": "exact",
   "tract": "601104"
+ },
+ "6557 STREAM SONG CT, CLARKSVILLE, MD 21029": {
+  "lat": 39.19223153365633,
+  "lng": -76.92176528818085,
+  "quality": "approx",
+  "tract": null
+ },
+ "6557 STREAM SONG CT, CLARKSVILLE, MD 21044": {
+  "lat": 39.19223153365633,
+  "lng": -76.92176528818085,
+  "quality": "approx",
+  "tract": null
  },
  "6558 STREAM SONG CT, CLARKSVILLE, MD 21029": {
   "quality": "failed"
@@ -5636,6 +6548,12 @@
   "quality": "exact",
   "tract": "603003"
  },
+ "660 RIVER RD, SYKESVILLE, MD 21784": {
+  "lat": 39.351620745722,
+  "lng": -76.945941714897,
+  "quality": "exact",
+  "tract": "603003"
+ },
  "6600 BROWN OAK LN, HIGHLAND, MD 20777": {
   "quality": "failed"
  },
@@ -5675,8 +6593,20 @@
   "quality": "exact",
   "tract": "605103"
  },
+ "6614 SENECA DR, COLUMBIA, MD 21046": {
+  "lat": 39.18950372777,
+  "lng": -76.865749251487,
+  "quality": "exact",
+  "tract": "606701"
+ },
  "6615 BROWN OAK LN, HIGHLAND, MD 20777": {
   "quality": "failed"
+ },
+ "6620 WASHINGTON BLVD *3, ELKRIDGE, MD 21075": {
+  "lat": 39.199611397542,
+  "lng": -76.738231882451,
+  "quality": "approx",
+  "tract": "601204"
  },
  "6620 WASHINGTON BLVD *44, ELKRIDGE, MD 21075": {
   "lat": 39.199611397542,
@@ -5719,6 +6649,12 @@
   "lng": -76.768671299495,
   "quality": "approx",
   "tract": "601203"
+ },
+ "6652 HAWKEYE RUN, COLUMBIA, MD 21044": {
+  "lat": 39.187756923794,
+  "lng": -76.878628345907,
+  "quality": "exact",
+  "tract": "605602"
  },
  "6656 DOBBIN RD, STE I, COLUMBIA, MD 21045": {
   "lat": 39.186499916417,
@@ -5792,6 +6728,12 @@
   "quality": "exact",
   "tract": "606701"
  },
+ "6713 STRAWTURKEY CT, COLUMBIA, MD 21046": {
+  "lat": 39.187118563157,
+  "lng": -76.868665945598,
+  "quality": "exact",
+  "tract": "606701"
+ },
  "6715 OLD WATERLOO RD, ELKRIDGE, MD 21075": {
   "lat": 39.187375000268,
   "lng": -76.789773090852,
@@ -5815,6 +6757,18 @@
   "lng": -76.861313570308,
   "quality": "exact",
   "tract": "606701"
+ },
+ "6746 PYRAMID WAY, COLUMBIA, MD 21044": {
+  "lat": 39.186220763325,
+  "lng": -76.876638269019,
+  "quality": "exact",
+  "tract": "605602"
+ },
+ "6750 ALEXANDER BELL DR, STE 300, COLUMBIA, MD 21046": {
+  "lat": 39.188655615547,
+  "lng": -76.811192554106,
+  "quality": "exact",
+  "tract": "606708"
  },
  "6750 ALEXANDER BELL DR, STE 450, COLUMBIA, MD 21046": {
   "lat": 39.188655615547,
@@ -5843,6 +6797,12 @@
  "6820 PYRAMID WAY, COLUMBIA, MD 21044": {
   "lat": 39.185080534351,
   "lng": -76.876317205935,
+  "quality": "exact",
+  "tract": "605602"
+ },
+ "6842 CARAVAN CT, COLUMBIA, MD 21044": {
+  "lat": 39.185660040957,
+  "lng": -76.885748928246,
   "quality": "exact",
   "tract": "605602"
  },
@@ -5900,6 +6860,12 @@
   "quality": "exact",
   "tract": "601203"
  },
+ "6942 LINDEN AVE, ELKRIDGE, MD 21075": {
+  "lat": 39.178700737421,
+  "lng": -76.751026344153,
+  "quality": "exact",
+  "tract": "601203"
+ },
  "6943 LINDEN AVE, ELKRIDGE, MD 21075": {
   "lat": 39.178447173982,
   "lng": -76.750741202491,
@@ -5930,6 +6896,12 @@
   "quality": "exact",
   "tract": "605106"
  },
+ "6971 BENDBOUGH CT, COLUMBIA, MD 21045": {
+  "lat": 39.19233709835,
+  "lng": -76.836278331899,
+  "quality": "exact",
+  "tract": "606704"
+ },
  "6987 NEWBERRY DR, COLUMBIA, MD 21044": {
   "lat": 39.18156957108,
   "lng": -76.884604352567,
@@ -5941,6 +6913,12 @@
   "lng": -76.8724809,
   "quality": "approx",
   "tract": null
+ },
+ "7000 BANBURY DR, HANOVER, MD 21076": {
+  "lat": 39.182968670497,
+  "lng": -76.733811663537,
+  "quality": "exact",
+  "tract": "601204"
  },
  "7001 DEEPAGE DR, COLUMBIA, MD 21045": {
   "lat": 39.17960513482,
@@ -6001,6 +6979,12 @@
   "lng": -77.0044369,
   "quality": "approx",
   "tract": null
+ },
+ "7049 COPPERWOOD WAY, COLUMBIA, MD 21046": {
+  "lat": 39.172372402174,
+  "lng": -76.86111906909,
+  "quality": "exact",
+  "tract": "606803"
  },
  "7061 COLUMBIA GATEWAY DR, COLUMBIA, MD 21046": {
   "lat": 39.17217268772,
@@ -6110,11 +7094,29 @@
   "quality": "exact",
   "tract": "601104"
  },
+ "7130 KIT KAT RD, STE H&I, ELKRIDGE, MD 21075": {
+  "lat": 39.175706941641,
+  "lng": -76.767268186946,
+  "quality": "approx",
+  "tract": "601203"
+ },
+ "7131 FOUNTAIN ROCK WAY, COLUMBIA, MD 21046": {
+  "lat": 39.172849511896,
+  "lng": -76.865929832152,
+  "quality": "exact",
+  "tract": "606803"
+ },
  "7131 MINK HOLLOW RD, HIGHLAND, MD 20777": {
   "lat": 39.176933097699,
   "lng": -76.989636426701,
   "quality": "exact",
   "tract": "605103"
+ },
+ "7145 STAG HORN PATH, COLUMBIA, MD 21045": {
+  "lat": 39.178883424491,
+  "lng": -76.841255128557,
+  "quality": "exact",
+  "tract": "606708"
  },
  "7146 DEEP FALLS WAY, ELKRIDGE, MD 21075": {
   "lat": 39.178160723605,
@@ -6134,6 +7136,12 @@
   "quality": "approx",
   "tract": "605105"
  },
+ "7169 DEEP FALLS WAY, ELKRIDGE, MD 21075": {
+  "lat": 39.178706976506,
+  "lng": -76.78386223144,
+  "quality": "exact",
+  "tract": "601203"
+ },
  "7171 DORSEY RUN RD, STE 100, ELKRIDGE, MD 21075": {
   "lat": 39.172323348026,
   "lng": -76.758101333205,
@@ -6146,11 +7154,23 @@
   "quality": "approx",
   "tract": "606708"
  },
+ "7180 TROY HILL DR, ELKRIDGE, MD 21075": {
+  "lat": 39.193906022184,
+  "lng": -76.750349272078,
+  "quality": "exact",
+  "tract": "601204"
+ },
  "7182 RIVERS EDGE RD, COLUMBIA, MD 21044": {
   "lat": 39.172823462294,
   "lng": -76.887057760658,
   "quality": "exact",
   "tract": "605105"
+ },
+ "7185 COLUMBIA GATEWAY DR, STE L, COLUMBIA, MD 21046": {
+  "lat": 39.182826059756,
+  "lng": -76.8035107428,
+  "quality": "approx",
+  "tract": "606708"
  },
  "7189 TRANQUILITY RD, LAUREL, MD 20723": {
   "lat": 39.1485399,
@@ -6170,6 +7190,12 @@
   "quality": "approx",
   "tract": null
  },
+ "7206 PROCOPIO CIR, COLUMBIA, MD 21046": {
+  "lat": 39.173070047048,
+  "lng": -76.82940460149,
+  "quality": "exact",
+  "tract": "606708"
+ },
  "7211 SINGLE WHEEL PATH, COLUMBIA, MD 21046": {
   "lat": 39.171355945803,
   "lng": -76.869425441862,
@@ -6181,6 +7207,12 @@
   "lng": -76.844142692545,
   "quality": "exact",
   "tract": "606708"
+ },
+ "7232 SECOND TIME LN, COLUMBIA, MD 21046": {
+  "lat": 39.170971396429,
+  "lng": -76.869370170192,
+  "quality": "exact",
+  "tract": "606803"
  },
  "7250 PRESERVATION CT, FULTON, MD 20759": {
   "lat": 39.173013977702,
@@ -6194,6 +7226,18 @@
   "quality": "exact",
   "tract": "606708"
  },
+ "7250 WASHINGTON BLVD, ELKRIDGE, MD 21075": {
+  "lat": 39.18590536873,
+  "lng": -76.761092799961,
+  "quality": "exact",
+  "tract": "601203"
+ },
+ "7251 MINK HOLLOW RD, HIGHLAND, MD 20777": {
+  "lat": 39.176018575178,
+  "lng": -76.990999766643,
+  "quality": "exact",
+  "tract": "605103"
+ },
  "7255 KINDLER RD, COLUMBIA, MD 21046": {
   "lat": 39.171494688407,
   "lng": -76.870088807667,
@@ -6205,6 +7249,30 @@
   "lng": -76.866295462148,
   "quality": "exact",
   "tract": "606803"
+ },
+ "7265 SWAN POINT WAY, COLUMBIA, MD 21045": {
+  "lat": 39.185109936821,
+  "lng": -76.843017757583,
+  "quality": "exact",
+  "tract": "606704"
+ },
+ "7270 DARBY DOWNS, UNIT D, ELKRIDGE, MD 21075": {
+  "lat": 39.209322907735,
+  "lng": -76.726505151206,
+  "quality": "approx",
+  "tract": "601205"
+ },
+ "7270 DARBY DOWNS, UNIT Q, ELKRIDGE, MD 21075": {
+  "lat": 39.209322907735,
+  "lng": -76.726505151206,
+  "quality": "approx",
+  "tract": "601205"
+ },
+ "7290 MEADOW WOOD WAY, CLARKSVILLE, MD 21029": {
+  "lat": 39.179034775806,
+  "lng": -76.920961825481,
+  "quality": "exact",
+  "tract": "605106"
  },
  "7298 MEADOW WOOD WAY, CLARKSVILLE, MD 21029": {
   "lat": 39.17928331215,
@@ -6253,6 +7321,12 @@
   "lng": -76.727000258445,
   "quality": "exact",
   "tract": "601206"
+ },
+ "7324 GREEN DRAKE RD, ELKRIDGE, MD 21075": {
+  "lat": 39.235799909531,
+  "lng": -76.767213549549,
+  "quality": "exact",
+  "tract": "601104"
  },
  "7332 GREEN DRAKE RD, ELKRIDGE, MD 21075": {
   "lat": 39.235782366509,
@@ -6437,6 +7511,12 @@
   "quality": "exact",
   "tract": "606803"
  },
+ "7535 BROWNS BRIDGE RD, HIGHLAND, MD 20777": {
+  "lat": 39.162986910165,
+  "lng": -76.944665886487,
+  "quality": "exact",
+  "tract": "605106"
+ },
  "7541 RED CRAVAT CT, COLUMBIA, MD 21046": {
   "lat": 39.163963797623,
   "lng": -76.869972715961,
@@ -6497,6 +7577,18 @@
   "quality": "exact",
   "tract": "601203"
  },
+ "7621 BROWNS BRIDGE RD, HIGHLAND, MD 20777": {
+  "lat": 39.159307410776,
+  "lng": -76.948186611662,
+  "quality": "exact",
+  "tract": "605106"
+ },
+ "7651 MONTPELIER RD, BLDG MP4, LAUREL, MD 20723": {
+  "lat": 39.16152336541,
+  "lng": -76.891631912969,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "7651 MONTPELIER RD, BLDG MP6, LAUREL, MD 20723": {
   "lat": 39.16152336541,
   "lng": -76.891631912969,
@@ -6532,6 +7624,12 @@
   "lng": -76.890371539435,
   "quality": "exact",
   "tract": "605105"
+ },
+ "7711 OLD WOODSTOCK LN, ELLICOTT CITY, MD 21043": {
+  "lat": 39.202736895341,
+  "lng": -76.781907707419,
+  "quality": "exact",
+  "tract": "601108"
  },
  "7726 PATUXENT OAK CT, ELKRIDGE, MD 21075": {
   "lat": 39.194603917787,
@@ -6611,6 +7709,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "7830 BLACKBRIAR WAY, LAUREL, MD 20723": {
+  "lat": 39.14393804605281,
+  "lng": -76.86587715344663,
+  "quality": "approx",
+  "tract": null
+ },
  "7832 OLD LITCHFIELD LN, ELLICOTT CITY, MD 21043": {
   "lat": 39.203219428673,
   "lng": -76.78361508353,
@@ -6664,6 +7768,24 @@
   "lng": -76.779093105807,
   "quality": "approx",
   "tract": "606901"
+ },
+ "7916 LAWNDALE CIR, COLUMBIA, MD 21044": {
+  "lat": 39.19377855993908,
+  "lng": -76.90332733484921,
+  "quality": "approx",
+  "tract": null
+ },
+ "7925 NOTTINGHAM WAY, ELLICOTT CITY, MD 21043": {
+  "lat": 39.241924856783,
+  "lng": -76.784286955202,
+  "quality": "exact",
+  "tract": "602700"
+ },
+ "7929 JAMES AVE, ELLICOTT CITY, MD 21043": {
+  "lat": 39.220297573201,
+  "lng": -76.785119164513,
+  "quality": "exact",
+  "tract": "601104"
  },
  "7933 LAWNDALE CIR, COLUMBIA, MD 21044": {
   "lat": 39.1940164,
@@ -6845,6 +7967,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "8171 MAPLE LAWN BLVD, FULTON, MD 20759": {
+  "lat": 39.148983506934,
+  "lng": -76.905000138069,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "8176 LARK BROWN RD, STE 101, ELKRIDGE, MD 21075": {
   "lat": 39.188744139128,
   "lng": -76.794267078726,
@@ -6902,6 +8030,12 @@
   "quality": "exact",
   "tract": "605105"
  },
+ "8230 PRESTON CT H, JESSUP, MD 20794": {
+  "lat": 39.148925701704,
+  "lng": -76.792148710554,
+  "quality": "approx",
+  "tract": "606901"
+ },
  "8230 PRESTON CT, STE E, JESSUP, MD 20794": {
   "lat": 39.148925701704,
   "lng": -76.792148710554,
@@ -6919,6 +8053,12 @@
   "lng": -76.792190538688,
   "quality": "approx",
   "tract": "606901"
+ },
+ "8241 ACADEMY RD, ELLICOTT CITY, MD 21043": {
+  "lat": 39.250492817482,
+  "lng": -76.787547375287,
+  "quality": "exact",
+  "tract": "602700"
  },
  "8251 PRESTON CT, STE E, JESSUP, MD 20794": {
   "lat": 39.151000230015,
@@ -6941,6 +8081,12 @@
  "8275 PATUXENT RANGE RD, JESSUP, MD 20794": {
   "lat": 39.147299347899,
   "lng": -76.797098591468,
+  "quality": "exact",
+  "tract": "606901"
+ },
+ "8276 GLEN CT, JESSUP, MD 20794": {
+  "lat": 39.143903469052,
+  "lng": -76.811817905089,
   "quality": "exact",
   "tract": "606901"
  },
@@ -7046,6 +8192,18 @@
   "quality": "exact",
   "tract": "606805"
  },
+ "8323 AUTUMN RIVER DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.256560350428,
+  "lng": -76.787379668166,
+  "quality": "approx",
+  "tract": "602700"
+ },
+ "8325 MURPHY RD, FULTON, MD 20759": {
+  "lat": 39.140690214487,
+  "lng": -76.917178534369,
+  "quality": "exact",
+  "tract": "605105"
+ },
  "8330 RESERVOIR RD, FULTON, MD 20759": {
   "lat": 39.142274060701,
   "lng": -76.941738298383,
@@ -7093,6 +8251,12 @@
   "lng": -76.8622978,
   "quality": "approx",
   "tract": null
+ },
+ "837 DAY RD, SYKESVILLE, MD 21784": {
+  "lat": 39.348160511935,
+  "lng": -76.964407971631,
+  "quality": "exact",
+  "tract": "603003"
  },
  "8371 KINGS HEIGHTS RD, ELLICOTT CITY, MD 21043": {
   "lat": 39.253570921292,
@@ -7142,17 +8306,41 @@
   "quality": "exact",
   "tract": "602100"
  },
+ "8413 ELKO DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.224252341428,
+  "lng": -76.802984879787,
+  "quality": "exact",
+  "tract": "601105"
+ },
  "8414 BLUE STONE CT, COLUMBIA, MD 21046": {
   "lat": 39.174047869726,
   "lng": -76.870216268146,
   "quality": "exact",
   "tract": "606803"
  },
+ "8416 OAK BUSH TER, COLUMBIA, MD 21045": {
+  "lat": 39.206460375192,
+  "lng": -76.804604950091,
+  "quality": "exact",
+  "tract": "606606"
+ },
  "8421 GATEWOOD DR, JESSUP, MD 20794": {
   "lat": 39.154179080952,
   "lng": -76.794932259445,
   "quality": "exact",
   "tract": "606901"
+ },
+ "8422 SAND CHERRY LN, LAUREL, MD 20723": {
+  "lat": 39.137512216459,
+  "lng": -76.897703704802,
+  "quality": "exact",
+  "tract": "606805"
+ },
+ "8425 BLUE STONE CT, COLUMBIA, MD 21046": {
+  "lat": 39.174056860576,
+  "lng": -76.870047395265,
+  "quality": "exact",
+  "tract": "606803"
  },
  "8435 ADDERLEY AVE, ELLICOTT CITY, MD 21043": {
   "lat": 39.2876624,
@@ -7177,6 +8365,12 @@
   "lng": -76.806068269955,
   "quality": "exact",
   "tract": "602600"
+ },
+ "8462 JACQUELINE CT, JESSUP, MD 20794": {
+  "lat": 39.167186623374,
+  "lng": -76.793439403826,
+  "quality": "exact",
+  "tract": "606901"
  },
  "8472 HILL ST, ELLICOTT CITY, MD 21043": {
   "lat": 39.267505125719,
@@ -7232,6 +8426,12 @@
   "quality": "exact",
   "tract": "602900"
  },
+ "8505 EASTERN MORNING RUN, LAUREL, MD 20723": {
+  "lat": 39.138721887765,
+  "lng": -76.860954288273,
+  "quality": "exact",
+  "tract": "606808"
+ },
  "8513 MOON GLASS CT, COLUMBIA, MD 21045": {
   "lat": 39.210892974807,
   "lng": -76.806008706259,
@@ -7256,6 +8456,12 @@
  "8535 LALLYBROCH LN, FULTON, MD 20759": {
   "quality": "failed"
  },
+ "8539 DARK HAWK CIR, COLUMBIA, MD 21045": {
+  "lat": 39.212285225969,
+  "lng": -76.805271905514,
+  "quality": "exact",
+  "tract": "606606"
+ },
  "8539 LIGHT MOON WAY, LAUREL, MD 20723": {
   "lat": 39.141599999879,
   "lng": -76.850204099391,
@@ -7264,6 +8470,12 @@
  },
  "8545 LALLYBROCH LN, FULTON, MD 20759": {
   "quality": "failed"
+ },
+ "8567 AUTUMN HARVEST, ELLICOTT CITY, MD 21043": {
+  "lat": 39.243693840562,
+  "lng": -76.81169746399,
+  "quality": "exact",
+  "tract": "602302"
  },
  "857 MORGAN STATION RD, WOODBINE, MD 21797": {
   "lat": 39.347545632872,
@@ -7276,6 +8488,18 @@
   "lng": -76.810325544582,
   "quality": "exact",
   "tract": "602900"
+ },
+ "8602 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192895051192,
+  "lng": -76.807419099332,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8603 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192780631847,
+  "lng": -76.807399469171,
+  "quality": "exact",
+  "tract": "606706"
  },
  "8605 GOLDEN STRAW LN, COLUMBIA, MD 21045": {
   "lat": 39.213235056738,
@@ -7295,6 +8519,12 @@
   "quality": "exact",
   "tract": "606905"
  },
+ "8615 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192565104337,
+  "lng": -76.808113481094,
+  "quality": "exact",
+  "tract": "606706"
+ },
  "8620 GUILFORD RD, STE B20, COLUMBIA, MD 21046": {
   "lat": 39.171330476843,
   "lng": -76.865137573401,
@@ -7306,6 +8536,24 @@
   "lng": -76.809698071756,
   "quality": "exact",
   "tract": "602800"
+ },
+ "8621 ROBERT FULTON DR, STE 110, COLUMBIA, MD 21046": {
+  "lat": 39.175026209911,
+  "lng": -76.810298372201,
+  "quality": "exact",
+  "tract": "606708"
+ },
+ "8624 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192638354677,
+  "lng": -76.808410558781,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8625 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192522851061,
+  "lng": -76.808464387515,
+  "quality": "exact",
+  "tract": "606706"
  },
  "8634 HAYSHED LN, COLUMBIA, MD 21045": {
   "lat": 39.213798775315,
@@ -7319,6 +8567,24 @@
   "quality": "exact",
   "tract": "602800"
  },
+ "8650 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192720183009,
+  "lng": -76.809205991953,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8651 VAST ROSE DR, COLUMBIA, MD 21045": {
+  "lat": 39.192713994187,
+  "lng": -76.809360228491,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8659 STONECUTTER RD, COLUMBIA, MD 21045": {
+  "lat": 39.211970775841,
+  "lng": -76.809563530426,
+  "quality": "exact",
+  "tract": "606606"
+ },
  "8661 ROBERT FULTON DR, STE A, COLUMBIA, MD 21046": {
   "lat": 39.175316155532,
   "lng": -76.811526860937,
@@ -7331,11 +8597,23 @@
   "quality": "exact",
   "tract": "602800"
  },
+ "8692 HINES CIR, LAUREL, MD 20723": {
+  "lat": 39.141633585659214,
+  "lng": -76.88471017886798,
+  "quality": "approx",
+  "tract": null
+ },
  "8700 OLD ANNAPOLIS RD, ELLICOTT CITY, MD 21043": {
   "lat": 39.2264133,
   "lng": -76.8124454,
   "quality": "approx",
   "tract": null
+ },
+ "8703 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193017393067,
+  "lng": -76.807318186449,
+  "quality": "exact",
+  "tract": "606706"
  },
  "8704 BOLLMAN PL, SAVAGE, MD 20763": {
   "lat": 39.130615466456,
@@ -7355,6 +8633,12 @@
   "quality": "exact",
   "tract": "606706"
  },
+ "8709 SAWYER DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.30053802273387,
+  "lng": -76.8054370943128,
+  "quality": "approx",
+  "tract": null
+ },
  "8710 CARDINAL FOREST CIR, LAUREL, MD 20723": {
   "lat": 39.130097035635,
   "lng": -76.869630455619,
@@ -7366,6 +8650,18 @@
   "lng": -76.860879514493,
   "quality": "exact",
   "tract": "606803"
+ },
+ "8714 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193628567624,
+  "lng": -76.807037044528,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8715 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193522319615,
+  "lng": -76.807202925852,
+  "quality": "exact",
+  "tract": "606706"
  },
  "8718 CARRIAGE HILLS DR, COLUMBIA, MD 21046": {
   "lat": 39.170390493788,
@@ -7385,17 +8681,65 @@
   "quality": "exact",
   "tract": "606901"
  },
+ "8721 HUGO CT, COLUMBIA, MD 21046": {
+  "lat": 39.170989312578,
+  "lng": -76.860237733486,
+  "quality": "exact",
+  "tract": "606803"
+ },
+ "8722 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194025284667,
+  "lng": -76.807264793453,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8723 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193815097943,
+  "lng": -76.807257019565,
+  "quality": "exact",
+  "tract": "606706"
+ },
  "8730 GREENWOOD PL, UNIT D, SAVAGE, MD 20763": {
   "lat": 39.132988213246,
   "lng": -76.812999629517,
   "quality": "approx",
   "tract": "606905"
  },
+ "8732 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194318718808,
+  "lng": -76.80780616745,
+  "quality": "exact",
+  "tract": "606706"
+ },
  "8738 SUSINI DR, LAUREL, MD 20723": {
   "lat": 39.130557544722,
   "lng": -76.872997465661,
   "quality": "exact",
   "tract": "606805"
+ },
+ "8745 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194345032397,
+  "lng": -76.808148958897,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8750 SUSINI DR, LAUREL, MD 20723": {
+  "lat": 39.129889302712,
+  "lng": -76.873540694282,
+  "quality": "exact",
+  "tract": "606805"
+ },
+ "8752 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194207923236,
+  "lng": -76.808798440982,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8759 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194346067555,
+  "lng": -76.808597652236,
+  "quality": "exact",
+  "tract": "606706"
  },
  "8765 CENTRE PARK DR, COLUMBIA, MD 21045": {
   "lat": 39.226438652941,
@@ -7409,6 +8753,12 @@
   "quality": "exact",
   "tract": "602302"
  },
+ "8767 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.194022350782,
+  "lng": -76.808709481675,
+  "quality": "exact",
+  "tract": "606706"
+ },
  "8775 CENTRE PARK DR, COLUMBIA, MD 21045": {
   "lat": 39.226491295916,
   "lng": -76.816711798072,
@@ -7421,11 +8771,35 @@
   "quality": "exact",
   "tract": "602302"
  },
+ "8775 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193865758072,
+  "lng": -76.808599757846,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8776 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193498565297,
+  "lng": -76.808018742546,
+  "quality": "exact",
+  "tract": "606706"
+ },
+ "8784 SAGE BRUSH WAY, COLUMBIA, MD 21045": {
+  "lat": 39.193089406158,
+  "lng": -76.808182778594,
+  "quality": "exact",
+  "tract": "606706"
+ },
  "8789 STONEHOUSE DR, ELLICOTT CITY, MD 21043": {
   "lat": 39.305065738578,
   "lng": -76.8158285698,
   "quality": "exact",
   "tract": "602100"
+ },
+ "8801 BALTIMORE NATIONAL PIKE, STE 25A, ELLICOTT CITY, MD 21043": {
+  "lat": 39.279224109736,
+  "lng": -76.816251712381,
+  "quality": "exact",
+  "tract": "602800"
  },
  "8801 CENTRE PARK DR, COLUMBIA, MD 21045": {
   "lat": 39.226625933014,
@@ -7445,6 +8819,12 @@
   "quality": "approx",
   "tract": null
  },
+ "8806 CARDINAL CT, LAUREL, MD 20723": {
+  "lat": 39.12580400489,
+  "lng": -76.870488409629,
+  "quality": "exact",
+  "tract": "606805"
+ },
  "8815 RED SPRUCE WAY, JESSUP, MD 20794": {
   "lat": 39.1436066,
   "lng": -76.8135439,
@@ -7456,6 +8836,12 @@
  },
  "8820 COLUMBIA 100 PKWY, STE 315, COLUMBIA, MD 21045": {
   "quality": "failed"
+ },
+ "8825 HAYSHED LN, COLUMBIA, MD 21045": {
+  "lat": 39.209698997032,
+  "lng": -76.814491179937,
+  "quality": "exact",
+  "tract": "606606"
  },
  "8825 STANFORD BLVD, STE 390, COLUMBIA, MD 21045": {
   "lat": 39.188025584585,
@@ -7499,6 +8885,12 @@
   "quality": "exact",
   "tract": "606708"
  },
+ "8848 YOUNGSEA PL, COLUMBIA, MD 21045": {
+  "lat": 39.21606375489,
+  "lng": -76.817925461564,
+  "quality": "exact",
+  "tract": "606607"
+ },
  "8850 COLUMBIA 100 PKWY, STE 301, COLUMBIA, MD 21045": {
   "lat": 39.231768513677,
   "lng": -76.815505239843,
@@ -7511,11 +8903,23 @@
   "quality": "exact",
   "tract": "606708"
  },
+ "8850 STANFORD BLVD, STE 2100, COLUMBIA, MD 21045": {
+  "lat": 39.187777309509,
+  "lng": -76.81800589721,
+  "quality": "exact",
+  "tract": "606708"
+ },
  "8850 STANFORD BLVD, STE 3250+3000, COLUMBIA, MD 21045": {
   "lat": 39.187777309509,
   "lng": -76.81800589721,
   "quality": "approx",
   "tract": "606708"
+ },
+ "8851 GORMAN RD, STE 200, LAUREL, MD 20723": {
+  "lat": 39.131381655873,
+  "lng": -76.820650958922,
+  "quality": "exact",
+  "tract": "606905"
  },
  "8855 MCGAW RD, COLUMBIA, MD 21045": {
   "lat": 39.186874174063,
@@ -7571,6 +8975,12 @@
   "quality": "exact",
   "tract": "606708"
  },
+ "8909 MCGAW CT, STE 11-12, COLUMBIA, MD 21045": {
+  "lat": 39.190031301223,
+  "lng": -76.823561567568,
+  "quality": "exact",
+  "tract": "606708"
+ },
  "8910 MOUNT PATAPSCO CT, ELLICOTT CITY, MD 21042": {
   "lat": 39.312927576296,
   "lng": -76.826735065905,
@@ -7593,6 +9003,12 @@
   "lat": 39.227013091583,
   "lng": -76.821605476164,
   "quality": "approx",
+  "tract": "602302"
+ },
+ "8928 DAWSON MANOR DR, ELLICOTT CITY, MD 21043": {
+  "lat": 39.237431889204,
+  "lng": -76.818561645916,
+  "quality": "exact",
   "tract": "602302"
  },
  "8938 WASHINGTON ST, SAVAGE, MD 20763": {
@@ -7618,6 +9034,18 @@
   "lng": -76.825075405948,
   "quality": "exact",
   "tract": "606708"
+ },
+ "8990 OLD ANNAPOLIS RD, STE H, COLUMBIA, MD 21045": {
+  "lat": 39.227418767605,
+  "lng": -76.823480619859,
+  "quality": "approx",
+  "tract": "602302"
+ },
+ "8999 TAWES ST, FULTON, MD 20759": {
+  "lat": 39.152133029968,
+  "lng": -76.897159142667,
+  "quality": "exact",
+  "tract": "605105"
  },
  "9005 JUNCTION DR, STE C, ANNAPOLIS JUNCTION, MD 20701": {
   "lat": 39.125281374367,
@@ -7715,6 +9143,12 @@
   "quality": "exact",
   "tract": "606904"
  },
+ "9099 OLD SCAGGSVILLE RD, LAUREL, MD 20723": {
+  "lat": 39.120618603706,
+  "lng": -76.864114062667,
+  "quality": "exact",
+  "tract": "606906"
+ },
  "9104 GUILFORD RD, STE H, COLUMBIA, MD 21046": {
   "lat": 39.170054356067,
   "lng": -76.847504030782,
@@ -7739,6 +9173,12 @@
   "quality": "exact",
   "tract": "606905"
  },
+ "9121 HELAINE HAMLET WAY, COLUMBIA, MD 21045": {
+  "lat": 39.206484707424,
+  "lng": -76.828899182603,
+  "quality": "exact",
+  "tract": "606604"
+ },
  "9122 BRYANT AVE, LAUREL, MD 20723": {
   "lat": 39.119605434848,
   "lng": -76.859338942857,
@@ -7751,11 +9191,23 @@
   "quality": "exact",
   "tract": "606804"
  },
+ "9129 NORTHFIELD RD, ELLICOTT CITY, MD 21042": {
+  "lat": 39.256488332041,
+  "lng": -76.829235145161,
+  "quality": "exact",
+  "tract": "602306"
+ },
  "9140 GUILFORD RD, STE D, COLUMBIA, MD 21046": {
   "lat": 39.16776062795,
   "lng": -76.843376194621,
   "quality": "approx",
   "tract": "606804"
+ },
+ "9151 VOLLMERHAUSEN RD, SAVAGE, MD 20763": {
+  "lat": 39.147976959971,
+  "lng": -76.827738788127,
+  "quality": "exact",
+  "tract": "606905"
  },
  "9160 GUILFORD RD, STE 200, COLUMBIA, MD 21046": {
   "lat": 39.167592700281,
@@ -7811,6 +9263,12 @@
   "quality": "exact",
   "tract": "606708"
  },
+ "9204 BERGER RD, STE H, COLUMBIA, MD 21046": {
+  "lat": 39.177001907112,
+  "lng": -76.828319270019,
+  "quality": "approx",
+  "tract": "606708"
+ },
  "9206 GREENSIDE LANDING, LAUREL, MD 20723": {
   "lat": 39.1148448,
   "lng": -76.8589308,
@@ -7829,11 +9287,23 @@
   "quality": "exact",
   "tract": "602100"
  },
+ "9214 TUNEMAKER TER, COLUMBIA, MD 21045": {
+  "lat": 39.177811617449,
+  "lng": -76.833567077657,
+  "quality": "exact",
+  "tract": "606708"
+ },
  "9215 BELLFALL CT, COLUMBIA, MD 21045": {
   "lat": 39.207655309334,
   "lng": -76.83020874405,
   "quality": "exact",
   "tract": "606604"
+ },
+ "9216 BRYANT AVE, LAUREL, MD 20723": {
+  "lat": 39.117946704018,
+  "lng": -76.860259211623,
+  "quality": "exact",
+  "tract": "606906"
  },
  "9217 QUICK FOX, COLUMBIA, MD 21045": {
   "lat": 39.179704525422,
@@ -7871,11 +9341,23 @@
   "quality": "exact",
   "tract": "606906"
  },
+ "9233 SPRING VALLEY RD, ELLICOTT CITY, MD 21043": {
+  "lat": 39.242825021811,
+  "lng": -76.831041035054,
+  "quality": "exact",
+  "tract": "602302"
+ },
  "9238 PIRATES COVE, COLUMBIA, MD 21046": {
   "lat": 39.17143697349,
   "lng": -76.832352634877,
   "quality": "exact",
   "tract": "606708"
+ },
+ "9242 RED CART CT, COLUMBIA, MD 21045": {
+  "lat": 39.209342962023,
+  "lng": -76.829759771273,
+  "quality": "exact",
+  "tract": "606604"
  },
  "9246 PERFECT HOUR, COLUMBIA, MD 21045": {
   "lat": 39.179165985469,
@@ -8009,6 +9491,12 @@
   "quality": "exact",
   "tract": "606603"
  },
+ "9404 PARSLEY DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.303300465178,
+  "lng": -76.838795679311,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "9404 SLOW RAIN WAY, COLUMBIA, MD 21046": {
   "lat": 39.155499216804,
   "lng": -76.838666417369,
@@ -8063,6 +9551,12 @@
   "quality": "exact",
   "tract": "606906"
  },
+ "9437 FAIRVIEW AVE, LAUREL, MD 20723": {
+  "lat": 39.113044449302,
+  "lng": -76.860281014668,
+  "quality": "exact",
+  "tract": "606906"
+ },
  "9449 KILIMANJARO RD, COLUMBIA, MD 21045": {
   "lat": 39.206810731006,
   "lng": -76.840201283733,
@@ -8074,6 +9568,12 @@
   "lng": -76.843824649907,
   "quality": "exact",
   "tract": "606804"
+ },
+ "947 HIGH STEPPER TRL, SYKESVILLE, MD 21784": {
+  "lat": 39.345162870398,
+  "lng": -76.946553031062,
+  "quality": "exact",
+  "tract": "603003"
  },
  "9473 FAREWELL RD, COLUMBIA, MD 21045": {
   "lat": 39.199256489892,
@@ -8098,6 +9598,12 @@
   "lng": -76.839741507053,
   "quality": "exact",
   "tract": "606603"
+ },
+ "9495 WASHINGTON AVE, LAUREL, MD 20723": {
+  "lat": 39.114701370043,
+  "lng": -76.842245925963,
+  "quality": "exact",
+  "tract": "606907"
  },
  "9501 GOOD LION RD, COLUMBIA, MD 21045": {
   "lat": 39.205093329021,
@@ -8309,6 +9815,30 @@
   "quality": "exact",
   "tract": "606603"
  },
+ "9670 WISHING WELL LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.294143988162915,
+  "lng": -76.84696064309436,
+  "quality": "approx",
+  "tract": null
+ },
+ "9672 WISHING WELL LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.294069045111314,
+  "lng": -76.84697045090064,
+  "quality": "approx",
+  "tract": null
+ },
+ "9674 WISHING WELL LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29399910681139,
+  "lng": -76.84698667986457,
+  "quality": "approx",
+  "tract": null
+ },
+ "9676 WISHING WELL LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.2939216830853,
+  "lng": -76.84700935424065,
+  "quality": "approx",
+  "tract": null
+ },
  "9680 WISHING WELL LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
@@ -8347,6 +9877,12 @@
  },
  "9707 BEGONIA LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
+ },
+ "9711 FINCH CT, ELLICOTT CITY, MD 21042": {
+  "lat": 39.304162217,
+  "lng": -76.850807362853,
+  "quality": "exact",
+  "tract": "602100"
  },
  "9722 PEACE SPRINGS RDG, LAUREL, MD 20723": {
   "lat": 39.118601649295,
@@ -8414,6 +9950,12 @@
  "9787 BLUE IVY WAY, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
+ "9788 BLUE IVY WAY, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29448542126422,
+  "lng": -76.84822038295663,
+  "quality": "approx",
+  "tract": null
+ },
  "9789 BLUE IVY WAY, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
@@ -8474,6 +10016,12 @@
   "quality": "exact",
   "tract": "602100"
  },
+ "9807 OWEN BROWN RD, COLUMBIA, MD 21045": {
+  "lat": 39.20155639206,
+  "lng": -76.851241702113,
+  "quality": "exact",
+  "tract": "606603"
+ },
  "9809 DAVIDGE DR, COLUMBIA, MD 21044": {
   "lat": 39.237572153622,
   "lng": -76.85192168091,
@@ -8501,6 +10049,18 @@
  "9821 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
+ "9825 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.296597039026295,
+  "lng": -76.85157462844717,
+  "quality": "approx",
+  "tract": null
+ },
+ "9827 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29651940266508,
+  "lng": -76.85158348134426,
+  "quality": "approx",
+  "tract": null
+ },
  "9827 ROBINSON BLVD, LAUREL, MD 20723": {
   "lat": 39.117487248626,
   "lng": -76.854879064456,
@@ -8513,6 +10073,12 @@
   "quality": "exact",
   "tract": "602202"
  },
+ "9829 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.296438382738586,
+  "lng": -76.85158582235391,
+  "quality": "approx",
+  "tract": null
+ },
  "9839 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
@@ -8522,6 +10088,12 @@
  "9843 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
+ "9844 DIVERSIFIED LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.305706385678,
+  "lng": -76.855984744596,
+  "quality": "exact",
+  "tract": "602100"
+ },
  "9845 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
   "quality": "failed"
  },
@@ -8530,6 +10102,30 @@
   "lng": -76.858194256991,
   "quality": "exact",
   "tract": "606808"
+ },
+ "9849 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29669960325895,
+  "lng": -76.85335539476748,
+  "quality": "approx",
+  "tract": null
+ },
+ "9851 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29673136696151,
+  "lng": -76.85344697711238,
+  "quality": "approx",
+  "tract": null
+ },
+ "9853 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29676049381433,
+  "lng": -76.8535385666438,
+  "quality": "approx",
+  "tract": null
+ },
+ "9855 LORI ANNE LN, ELLICOTT CITY, MD 21042": {
+  "lat": 39.296792261660386,
+  "lng": -76.85363354462048,
+  "quality": "approx",
+  "tract": null
  },
  "9861 LYON AVE, LAUREL, MD 20723": {
   "lat": 39.118567736276,
@@ -8542,6 +10138,30 @@
   "lng": -76.851347175612,
   "quality": "exact",
   "tract": "606701"
+ },
+ "9874 LONGVIEW DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29163391412,
+  "lng": -76.848038361745,
+  "quality": "exact",
+  "tract": "602202"
+ },
+ "9876 LONGVIEW DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.291643231611,
+  "lng": -76.848048714512,
+  "quality": "exact",
+  "tract": "602202"
+ },
+ "9878 LONGVIEW DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.291652549103,
+  "lng": -76.848059067278,
+  "quality": "exact",
+  "tract": "602202"
+ },
+ "9880 LONGVIEW DR, ELLICOTT CITY, MD 21042": {
+  "lat": 39.291661866595,
+  "lng": -76.848069420044,
+  "quality": "exact",
+  "tract": "602202"
  },
  "9881 LONGVIEW DR, ELLICOTT CITY, MD 21042": {
   "lat": 39.291587152218,
@@ -8680,6 +10300,12 @@
   "lng": -76.820066538772,
   "quality": "approx",
   "tract": "606901"
+ },
+ "9971 HOPE PL, ELLICOTT CITY, MD 21042": {
+  "lat": 39.29536205682027,
+  "lng": -76.85463755388429,
+  "quality": "approx",
+  "tract": null
  },
  "9976 BAKER LN, ELLICOTT CITY, MD 21042": {
   "lat": 39.2922085,
