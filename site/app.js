@@ -58,11 +58,12 @@
   const $ = (id) => document.getElementById(id);
   const searchEl = $("search"), fromEl = $("from"), toEl = $("to");
 
-  const months = permits.map((p) => p.issued.slice(0, 7));
-  const minMonth = months.reduce((a, b) => (a < b ? a : b));
-  const maxMonth = months.reduce((a, b) => (a > b ? a : b));
-  fromEl.min = toEl.min = minMonth;
-  fromEl.max = toEl.max = maxMonth;
+  const dates = permits.map((p) => p.issued.slice(0, 10));
+  const minDate = dates.reduce((a, b) => (a < b ? a : b));
+  const maxDate = dates.reduce((a, b) => (a > b ? a : b));
+  fromEl.min = toEl.min = minDate;
+  fromEl.max = toEl.max = maxDate;
+  Object.assign(state, Filters.normalizeRange(state.from, state.to));
 
   // permit-type checklist, grouped by category
   const typesByCat = new Map();
@@ -88,6 +89,15 @@
     searchEl.value = state.q;
     fromEl.value = state.from;
     toEl.value = state.to;
+    document.querySelectorAll("#date-presets button").forEach((b) => {
+      const isAll = b.dataset.months === "all";
+      const range = isAll
+        ? { from: "", to: "" }
+        : Filters.lastMonths(maxDate, Number(b.dataset.months), minDate);
+      const active = state.from === range.from && state.to === range.to;
+      b.classList.toggle("active", active);
+      b.setAttribute("aria-pressed", String(active));
+    });
     document.querySelectorAll("#cats button").forEach((b) =>
       b.classList.toggle("active", b.dataset.cat === state.cat));
     document.querySelectorAll("#types input").forEach((cb) => {
@@ -183,8 +193,26 @@
     clearTimeout(debounce);
     debounce = setTimeout(() => { state.q = searchEl.value.trim(); render(); }, 150);
   });
-  fromEl.addEventListener("change", () => { state.from = fromEl.value; render(); });
-  toEl.addEventListener("change", () => { state.to = toEl.value; render(); });
+  fromEl.addEventListener("change", () => {
+    state.from = fromEl.value;
+    syncControls();
+    render();
+  });
+  toEl.addEventListener("change", () => {
+    state.to = toEl.value;
+    syncControls();
+    render();
+  });
+  $("date-presets").addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    const range = btn.dataset.months === "all"
+      ? { from: "", to: "" }
+      : Filters.lastMonths(maxDate, Number(btn.dataset.months), minDate);
+    Object.assign(state, range);
+    syncControls();
+    render();
+  });
   $("cats").addEventListener("click", (e) => {
     const btn = e.target.closest("button");
     if (!btn) return;
@@ -200,6 +228,7 @@
   }
   window.addEventListener("hashchange", () => {
     state = Filters.fromHash(location.hash);
+    Object.assign(state, Filters.normalizeRange(state.from, state.to));
     syncControls();
     render();
   });

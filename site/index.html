@@ -19,8 +19,16 @@
     <div class="controls">
       <input id="search" type="search" placeholder="Search contractor, address, description…" autocomplete="off">
       <div class="dates">
-        <label>From <input id="from" type="month"></label>
-        <label>To <input id="to" type="month"></label>
+        <label>From <input id="from" type="date"></label>
+        <label>To <input id="to" type="date"></label>
+      </div>
+      <div class="date-presets" id="date-presets" aria-label="Date range shortcuts">
+        <button type="button" data-months="all" class="active" aria-pressed="true">All time</button>
+        <button type="button" data-months="1" aria-pressed="false">Last 1m</button>
+        <button type="button" data-months="2" aria-pressed="false">Last 2m</button>
+        <button type="button" data-months="3" aria-pressed="false">Last 3m</button>
+        <button type="button" data-months="6" aria-pressed="false">Last 6m</button>
+        <button type="button" data-months="12" aria-pressed="false">Last 12m</button>
       </div>
       <div class="cats" id="cats">
         <button data-cat="All" class="active">All</button>

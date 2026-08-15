@@ -23,10 +23,29 @@ test("query matches across fields, case-insensitive", () => {
   assert.ok(!Filters.matches(permit(), { ...EMPTY, q: "zebra" }));
 });
 
-test("date range is inclusive by month", () => {
+test("date range is inclusive by day", () => {
+  assert.ok(Filters.matches(permit(), { ...EMPTY, from: "2026-06-11", to: "2026-06-11" }));
+  assert.ok(!Filters.matches(permit(), { ...EMPTY, to: "2026-06-10" }));
+  assert.ok(!Filters.matches(permit(), { ...EMPTY, from: "2026-06-12" }));
+});
+
+test("legacy month ranges still include the whole month", () => {
   assert.ok(Filters.matches(permit(), { ...EMPTY, from: "2026-06", to: "2026-06" }));
-  assert.ok(!Filters.matches(permit(), { ...EMPTY, to: "2026-05" }));
-  assert.ok(!Filters.matches(permit(), { ...EMPTY, from: "2026-07" }));
+  assert.deepStrictEqual(Filters.normalizeRange("2026-02", "2026-02"), {
+    from: "2026-02-01", to: "2026-02-28",
+  });
+});
+
+test("last-month shortcuts use complete calendar months through the newest date", () => {
+  assert.deepStrictEqual(Filters.lastMonths("2026-07-31", 1), {
+    from: "2026-07-01", to: "2026-07-31",
+  });
+  assert.deepStrictEqual(Filters.lastMonths("2026-01-15", 3), {
+    from: "2025-11-01", to: "2026-01-15",
+  });
+  assert.deepStrictEqual(Filters.lastMonths("2026-07-31", 12, "2026-01-02"), {
+    from: "2026-01-02", to: "2026-07-31",
+  });
 });
 
 test("category and type filters", () => {

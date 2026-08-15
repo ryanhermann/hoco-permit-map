@@ -16,9 +16,16 @@ body { font: 14px/1.45 system-ui, sans-serif; color: #1a202c; }
 #search { width: 100%; padding: 8px 10px; border: 1px solid #cbd5e0;
   border-radius: 6px; font-size: 14px; }
 .dates { display: flex; gap: 8px; }
-.dates label { flex: 1; font-size: 12px; color: #4a5568; }
+.dates label { flex: 1; min-width: 0; font-size: 12px; color: #4a5568; }
 .dates input { width: 100%; padding: 4px 6px; border: 1px solid #cbd5e0;
-  border-radius: 6px; }
+  border-radius: 6px; font: inherit; }
+.date-presets { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px; }
+.date-presets button { min-width: 0; padding: 5px 2px; border: 1px solid #cbd5e0;
+  background: #fff; border-radius: 6px; color: #4a5568; cursor: pointer;
+  font-size: 11px; white-space: nowrap; }
+.date-presets button.active { background: #ebf8ff; color: #2b6cb0;
+  border-color: #63b3ed; font-weight: 600; }
 .cats { display: flex; gap: 6px; }
 .cats button { flex: 1; padding: 6px 0; border: 1px solid #cbd5e0;
   background: #fff; border-radius: 6px; cursor: pointer; }
